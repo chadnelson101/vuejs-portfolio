@@ -20,7 +20,7 @@ export default createStore({
     async fetchPortfolio({ commit }) {
       try {
         const portfolioResponse = await axios.get("http://localhost:3000/Portfolio");
-        const aboutResponse = await axios.get("http://localhost:3000/about");
+        const aboutResponse = await axios.get("http://localhost:3000/About");
 
         commit('setPortfolio', portfolioResponse.data);
         commit('setAbout', aboutResponse.data);

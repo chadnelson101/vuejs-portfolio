@@ -1,0 +1,6 @@
+{
+    "watch": true,
+    "source": "src/data/index.json",
+    "port": 3000
+  }
+  
