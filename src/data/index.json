@@ -1,0 +1,18 @@
+{
+    "Portfolio":[
+        {
+            "heading":"My Portfolio",
+            "title": "I'm",
+            "name": "Chad Nelson",
+            "is": "Aspiring Web Developer",
+            "image": "https://drive.google.com/uc?id=18ptNUZlozk3wX5woaSibJs4GHo0rXDWU"
+        }
+    ],
+    "About": [
+        {
+            "info": "My Name is Chad Nelson I am a young adult with a strong will power to achieve whatever I set my mind to. I am an excellent team player,I am highly adaptable andI am able to meet a job's demands and deadlines through diligent work-ethic and dedication to quality.I am detail-oriented and working recently has taught me a lot about communicating effectively both verbally and electronically",
+            "image": "https://drive.google.com/uc?id=11v0XapeXWWxjNfI8IrksUnVKWIlu_Stt",
+            "heading": "Aspiring Web Developer"
+        }
+    ]
+}
