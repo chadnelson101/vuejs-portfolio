@@ -69,7 +69,7 @@ body{
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 751px) {
   .head{
     font-size: 50px;
     margin-left: 0;

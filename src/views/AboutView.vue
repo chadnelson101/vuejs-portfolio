@@ -3,8 +3,13 @@
     <div class="left">
       <img :src="About.image" >
     </div>
+    <div class="img-container">
+    <img :src="About.image1" >
+  </div>
+  <div class="heading1">
+  <h1>{{ About.heading }}</h1>
+</div>
     <div class="right">
-      <h1>{{ About.heading }}</h1>
       <p>{{ About.info }}</p>
     </div>
   </div>
@@ -32,24 +37,39 @@ export default {
   }
   </script>
 
-  <style>
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
+  <style scoped>
 .left img {
   width: 500px;
   border-radius: 10px; 
+  margin-left: -60%;
 }
 .right p {
+  line-height: 2.5rem;
   max-width: 800px;
+  margin-left: 47%;
+  margin-top: 3%;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  font-size: 25px;
+  margin-right: 20px;
 }
-.right h1{
-  margin-top: -33%;
-  margin-left: -40%;
+h1{
+  margin-top: -35%;
+  margin-left: 40%;
+}
+@media (max-width: 750px) {
+  .left img{
+    justify-content: center;
+    align-items: center;
+  }
+  .right h1{
+    margin-top: -10%;
+    margin-left: 3%;
+  }
+ .right p{
+    margin-top: 5%;
+    position: relative;
+  }
 }
   </style>
