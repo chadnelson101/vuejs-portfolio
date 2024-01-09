@@ -1,6 +1,5 @@
 <template>
   <div>
-      <h1 class="">{{ Portfolio.heading }}</h1>
       <h2 class="head">{{ Portfolio.title}}</h2>
       <h3 class="head1">{{ Portfolio.name }}</h3>
       <h4 class="head2">{{ Portfolio.is }}</h4>
@@ -33,7 +32,7 @@ export default {
 <style >
 body{
   min-height: 100vh;
-    background: linear-gradient(to right bottom, lightblue, grey);
+  background: linear-gradient(to right bottom, #7aa7ba, #0d1a20);
 }
 .head{
   font-size: 70px;
@@ -72,24 +71,26 @@ body{
 @media (max-width: 751px) {
   .head{
     font-size: 50px;
-    margin-left: 0;
+    margin-left: -80%;
     margin-top: 8%;
   }
   .head1{
     font-size: 50px;
-    margin-left: 0;
-    margin-top: 8%;
+    margin-left: -50%;
+    margin-top: 13%;
   }
   .head2 {
     font-size: 50px;
-    margin-left: 0;
-    margin-top: 8%;
+    margin-left: -6%;
+    margin-top: 20%;
   }
 
   .img {
-    width: 100%;
-    margin-top: 15%;
-    margin-left: -2%;
+    width: 250px;
+    margin-left: 3%;
+    margin-top: -60%;
+    position: absolute;
+    
   }
 }
 

@@ -19,5 +19,21 @@
             "image1": "https://drive.google.com/uc?id=18ptNUZlozk3wX5woaSibJs4GHo0rXDWU",
             "heading2": "Aspiring Web Developer"
         }
+    ],
+    "Contact": [
+        {
+            "heading": "Contact me",
+            "name": "Name",
+            "surname":"Surname",
+            "phone":"Phone",
+            "email": "Email",
+            "message":"Message",
+            "head":"Reach Me",
+            "address":"Address",
+            "mail":"Chadnelson279@nelson",
+            "number": "+27 73 726 9407",
+            "add": "14 Ruimte Road Manenberg",
+            "image": "https://drive.google.com/uc?"
+        }
     ]
 }

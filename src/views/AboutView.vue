@@ -61,6 +61,7 @@ export default {
   </script>
 
   <style scoped>
+  
 #about{
   align-items: center;
   padding: 80px 12%;
@@ -106,15 +107,16 @@ export default {
 }
 
 @media (max-width: 750px) {
-  .left img{
-    margin-left: -0%;
-    margin-top: 10%;
-    width: 320px;
+  .about{
+    width: 100%;
+  }
+  #about img{
+    margin-left: 10%;
+    margin-top: -50%;
   }
   h1{
-    font-size: 28px;
-    margin-top: 10%;
-    margin-left: -0%;
+    margin-left: -190%;
+    margin-top: 0%;
   }
 
 }
