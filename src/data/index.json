@@ -33,7 +33,37 @@
             "mail":"Chadnelson279@nelson",
             "number": "+27 73 726 9407",
             "add": "14 Ruimte Road Manenberg",
-            "image": "https://drive.google.com/uc?"
+            "image": "https://drive.google.com/uc?id=1JOGWnPUZUWYWHBM4-CdMhd0dF8kpDN6t"
+    
+        }
+    ],
+    "Testimonials": [
+        {
+            "joel": "Joel Williams",
+            "para1":"I highly recommend Chad Nelson as a software developer. Their technical expertise, commitment to quality, and strong communication skills make them an asset to any team. I look forward to the opportunity to work with them again in the future.",
+            "image1":"https://i.postimg.cc/SKwjqLB0/joel.png",
+
+            "jodi": "Jodi Abrahams",
+            "para2":"Chad's proficiency in various programming languages and problem-solving skills are truly impressive. Chad's collaborative nature and willingness to share knowledge have made helped me understand more. He's a valuable asset to any development team.",
+            "image2":"https://drive.google.com/uc?id=1cKqM2JkPkf6mz37fISsFqKa3CmJm3y0k",
+
+            "jodie": "Jodie Smith",
+            "para3":"Chad is an extremely hardworking person. His dedication and concentration in his work are genuinely astounding, and he consistently goes above and beyond to get exceptional outcomes. It's a pleasure to work with someone who is so focused and driven.",
+            "image3":"https://drive.google.com/uc?id=1bkn7ZkHPSVYe3RVIGzvREwvvYSFrw112",
+
+            "niyaaz": "Niyaaz",
+            "para4":"Since meeting Chad I've come to appreciate all of his skills. Chad displays excellent leadership qualities, the ability to adapt to his environment and overcome and excel with excellence in any challenge he faces. Chad displays excellent technical skills and is a master behind the keyboard, combined with his leadership skills. Chad is an invaluable asset on any team, without a doubt.",
+            "image4":"https://drive.google.com/uc?id=1GGu9NouT18zgM1JfMJTeuP79JWLmwloV",
+
+            "zubair": "Zubair Moerat",
+            "para5":"Chad is a capable professional in managing tasks and projects.he's a reliable team player who consistently delivers excellent results in any work setting.",
+            "image5":"https://drive.google.com/uc?id=1mh6CVhtcJJm0HLkWrezQ4m00wvkPORje",
+
+            "matthew": "Matthew Dean Brown",
+            "para6":"Chad is great at handling tasks and projects. He's efficient, communicates well, and consistently succeeds in different work environments, showing his capability and effectiveness.",
+            "image6":"https://drive.google.com/uc?id=17_eI3tLVRH0Bs8JLNEqhFjddyQ3BCP5k"
         }
     ]
 }
+
+
