@@ -1,14 +1,25 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>|
-     <router-link to="/Resume">Resume</router-link>|
-    <router-link to="/Projects">Projects</router-link>|
-    <router-link to="/Testimonials">Testimonials</router-link>|
-    <router-link to="/Contact">Contact</router-link>|
-  </nav>
-  <router-view/>
+  <div>
+   <NavBar/>
+   <router-view/>
+   <FooterViewVue/>
+  </div>
 </template>
+
+<script>
+import FooterViewVue from './components/FooterView.vue';
+// Import the NavBar component
+import NavBar from './components/NavBar.vue';
+
+export default {
+  components: {
+    // Register the NavBar component in the components object
+    NavBar,
+    FooterViewVue
+  }
+};
+
+</script>
 
 <style>
 @import '~boxicons/css/boxicons.min.css';
@@ -20,16 +31,4 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
