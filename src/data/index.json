@@ -5,7 +5,7 @@
             "title": "I'm",
             "name": "Chad Nelson",
             "is": "Aspiring Web Developer",
-            "image": "https://drive.google.com/uc?id=18ptNUZlozk3wX5woaSibJs4GHo0rXDWU"
+            "image": "https://iili.io/J74VHWx.png"
         }
     ],
     "About": [
@@ -15,7 +15,7 @@
             "address": "14 Ruimte Road Manenberg",
             "number": "+27 73 726 9407",
             "email": "Chadnelson279@gmial.com",
-            "image": "https://drive.google.com/uc?id=11v0XapeXWWxjNfI8IrksUnVKWIlu_Stt",
+            "image": "https://iili.io/J74V1s4.md.jpg",
             "image1": "https://drive.google.com/uc?id=18ptNUZlozk3wX5woaSibJs4GHo0rXDWU",
             "heading2": "Aspiring Web Developer"
         }
@@ -33,7 +33,37 @@
             "mail":"Chadnelson279@nelson",
             "number": "+27 73 726 9407",
             "add": "14 Ruimte Road Manenberg",
-            "image": "https://drive.google.com/uc?"
+            "image": "https://iili.io/J74Vp2I.md.png"
+    
+        }
+    ],
+    "Testimonials": [
+        {
+            "joel": "Joel Williams",
+            "para1":"I highly recommend Chad Nelson as a software developer. Their technical expertise, commitment to quality, and strong communication skills make them an asset to any team. I look forward to the opportunity to work with them again in the future.",
+            "image1":"https://iili.io/J74Wq42.png",
+
+            "jodi": "Jodi Abrahams",
+            "para2":"Chad's proficiency in various programming languages and problem-solving skills are truly impressive. Chad's collaborative nature and willingness to share knowledge have made helped me understand more. He's a valuable asset to any development team.",
+            "image2":"https://iili.io/J78uza1.md.png",
+
+            "jodie": "Jodie Smith",
+            "para3":"Chad is an extremely hardworking person. His dedication and concentration in his work are genuinely astounding, and he consistently goes above and beyond to get exceptional outcomes. It's a pleasure to work with someone who is so focused and driven.",
+            "image3":"https://iili.io/J74W0yF.png",
+
+            "niyaaz": "Niyaaz Daniels",
+            "para4":"Since meeting Chad I've come to appreciate all of his skills. Chad displays excellent leadership qualities, the ability to adapt to his environment and overcome and excel with excellence in any challenge he faces. Chad displays excellent technical skills and is a master behind the keyboard, combined with his leadership skills. Chad is an invaluable asset on any team, without a doubt.",
+            "image4":"https://iili.io/J74WXGR.png",
+
+            "zubair": "Zubair Moerat",
+            "para5":"Chad is a capable professional in managing tasks and projects.he's a reliable team player who consistently delivers excellent results in any work setting.",
+            "image5":"https://iili.io/J74W8js.md.png",
+
+            "matthew": "Matthew Brown",
+            "para6":"Chad is great at handling tasks and projects. He's efficient, communicates well, and consistently succeeds in different work environments, showing his capability and effectiveness.",
+            "image6":"https://iili.io/J78TmCl.png"
         }
     ]
 }
+
+

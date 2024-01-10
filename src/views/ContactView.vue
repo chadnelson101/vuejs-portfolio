@@ -64,7 +64,9 @@
 </table>
     </form>
     <div class="image">
-      <img :src="Contact.image">
+      <a href="https://maps.app.goo.gl/ZJR5Zom8tNmEp36EA">
+        <img :src="Contact.image">
+      </a>
     </div>
 </template>
 
@@ -90,7 +92,7 @@ export default {
   }
   </script>
 
-<style>
+<style scoped>
 .container{
     width: 80%;
     margin-left: 10%;
@@ -113,7 +115,7 @@ export default {
     height: 400px;
     background: linear-gradient(to right bottom, lightblue, grey);
     color: #fff;
-    margin-top: -33.2%;
+    margin-top: -33%;
     margin-left: 64%;
 }
 h1{
@@ -180,5 +182,11 @@ tr td{
 tr td{
     padding-top: 30px;
   }
-
+img{
+  position: absolute;;
+  width: 300px;
+  height: 200px;
+  margin-left: 16.5%;
+  margin-top: -14%;
+}
 </style>
