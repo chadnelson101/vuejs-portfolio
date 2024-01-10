@@ -6,34 +6,6 @@
  <div class="about">
   <h1>{{ About.heading }}</h1>
   <p>{{ About.info }}</p>
-  <div class="add">
-    <ul>
-      <li>
-        <span class="icon">
-          <i class='bx bxs-edit-location'></i>
-        </span>
-        <p>Address</p>
-        <span class="chad">:</span>
-        <p>{{ About.address }}</p>
-      </li>
-      <li>
-        <span class="icon">
-          <i class='bx bxs-phone' ></i>
-        </span>
-        <p>Phone NO</p>
-        <span class="chad">:</span>
-        <p>{{ About.number }}</p>
-      </li>
-      <li>
-        <span class="icon">
-        <i class='bx bx-envelope-open' ></i>
-      </span>
-      <p>Email</p>
-      <span class="chad">:</span>
-      <p>{{ About.email }}</p>
-      </li>
-    </ul>
-  </div>
  </div>
 </section>
 </template>
@@ -83,14 +55,16 @@ export default {
   align-items: center;
 }
 .about h1{
-  color: #fff;
+  color: #008bf8;
   font-size: 37px;
-  margin-bottom: 5px;
+  margin-top: 1%;
+  text-decoration: underline;
 }
 .about p{
   color: #fff;
-  line-height: 26px;
-  font-size: 15px;
+  line-height: 35px;
+  font-size: 25px;
+  margin-top: 10%;
 }
 .about .add{
   margin: 25px 0;

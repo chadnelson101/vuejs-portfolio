@@ -2,7 +2,7 @@
     "Portfolio":[
         {
             "heading":"My Portfolio",
-            "title": "I'm",
+            "title": "Hello, I'm",
             "name": "Chad Nelson",
             "is": "Aspiring Web Developer",
             "image": "https://iili.io/J74VHWx.png"
@@ -11,7 +11,7 @@
     "About": [
         {
             "heading":"About Me",
-            "info": " Hi My Name is Chad Nelson I am a young adult with a strong will power to achieve whatever I set my mind to. I am an excellent team player, I am highly adaptable in any situations and I am able to meet a job's demands and deadlines through diligent work-ethic and dedication to produce  quality work. I am detail-oriented and working recently has taught me a lot about communicating effectively both verbally and electronically",
+            "info": " Hi My Name is Chad Nelson I am a young adult with a strong will power to achieve whatever I set my mind to. I am an excellent team player, I am highly adaptable in any situations and I am able to meet a job's demands and deadlines through diligent work-ethic and dedication to produce  quality work. I am detail-oriented and working recently has taught me a lot about communicating effectively both verbally and electronically.",
             "address": "14 Ruimte Road Manenberg",
             "number": "+27 73 726 9407",
             "email": "Chadnelson279@gmial.com",
@@ -57,11 +57,33 @@
 
             "zubair": "Zubair Moerat",
             "para5":"Chad is a capable professional in managing tasks and projects.he's a reliable team player who consistently delivers excellent results in any work setting.",
-            "image5":"https://iili.io/J74W8js.md.png",
+            "image5":"https://iili.io/J76scG4.png",
 
             "matthew": "Matthew Brown",
             "para6":"Chad is great at handling tasks and projects. He's efficient, communicates well, and consistently succeeds in different work environments, showing his capability and effectiveness.",
             "image6":"https://iili.io/J78TmCl.png"
+        }
+    ],
+    "Projects": [
+        {
+            "heading": "MY PROJECTS",
+            "project1": "Netflix clone",
+            "image1": "https://iili.io/J74sdU7.md.jpg",
+
+            "project2": "e-commerce website",
+            "image2": "https://iili.io/J74bXm7.md.png",
+
+            "project3": "sneak peak website",
+            "image3": "https://iili.io/J74bxqJ.md.png",
+
+            "project4": "Calculator",
+            "image4": "https://iili.io/J74mxj9.png",
+
+            "project5": "Age To Days Calculator",
+            "image5": "https://iili.io/J76z2na.md.png",
+
+            "project6": "sneaker-store clone",
+            "image6": "https://iili.io/J74tU6x.md.png"
         }
     ]
 }

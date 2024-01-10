@@ -8,6 +8,7 @@ export default createStore({
     About: '',
     Contact: '',
     Testimonials: '',
+    Projects: '',
   },
   getters: {},
   mutations: {
@@ -23,6 +24,9 @@ export default createStore({
     setTestimonials(state, Testimonials) {
       state.Testimonials = Testimonials;
     },
+    setProjects(state, Projects) {
+      state.Projects = Projects;
+    },
   },
   actions: {
     async fetchPortfolio({ commit }) {
@@ -31,11 +35,13 @@ export default createStore({
         const aboutResponse = await axios.get("http://localhost:3000/About");
         const contactResponse = await axios.get("http://localhost:3000/Contact");
         const TestimonialsResponse = await axios.get("http://localhost:3000/Testimonials");
+        const ProjectsResponse = await axios.get("http://localhost:3000/Projects");
 
         commit('setPortfolio', portfolioResponse.data);
         commit('setAbout', aboutResponse.data);
         commit('setContact', contactResponse.data);
         commit('setTestimonials', TestimonialsResponse.data);
+        commit('setProjects', ProjectsResponse.data);
       } catch (error) {
         console.error('Error fetching portfolio data', error);
       }

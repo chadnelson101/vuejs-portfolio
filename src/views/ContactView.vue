@@ -1,4 +1,5 @@
 <template>
+  <div class="contact">
   <form action="https://formspree.io/f/mjvqlbaa"
     method="POST"
     >
@@ -68,6 +69,7 @@
         <img :src="Contact.image">
       </a>
     </div>
+  </div>
 </template>
 
 <script>
@@ -93,6 +95,12 @@ export default {
   </script>
 
 <style scoped>
+.contact{
+  height: 100vh;
+}
+h1{
+  color: #008bf8;
+}
 .container{
     width: 80%;
     margin-left: 10%;
