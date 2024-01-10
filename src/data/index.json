@@ -85,6 +85,31 @@
             "project6": "sneaker-store clone",
             "image6": "https://iili.io/J74tU6x.md.png"
         }
+    ],
+    "Resume":[
+        {
+            "subheading": "Education / Experience",
+            "heading": "Education",
+            "heading1": "Primary School",
+            "primaryschool": "Portavue Primary School, Surrey State",
+            "year": "2011-2017",
+
+           "heading2": "High School",
+           "Highschool": "Windsor High School, Landsdowne",
+           "year1": "2018-2021",
+
+           "heading3": "Experience",
+           "subheading1": "Amanziblue",
+           "job": "Porter / Usher",
+           "year2": "2022",
+           "jobdescription": "I worked on serval occasions at Amanziblue as a porter, usher and general worker part-time.",
+
+           "heading4": "Zane Samuels Construction",
+           "subheading2": " Admin",
+           "year3": "2023",
+           "jobdescription1": "I worked on serval occasions at Zane Samuels Construction as a admin as a  part-time job."
+
+        }
     ]
 }
 
