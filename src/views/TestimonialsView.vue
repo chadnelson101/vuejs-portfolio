@@ -4,8 +4,9 @@
   <div class="myCard">
         <div class="innerCard">
             <div class="frontSide">
-                <p class="title"></p>
-                <img :src="Testimonial.image1" alt="">
+              <p class="title"></p>
+              <img :src="Testimonial.image1" alt="">
+              <p class="img-name">{{ Testimonial.joel }}</p>
             </div>
             <div class="backSide">
                 <p class="title"></p>
@@ -18,6 +19,7 @@
             <div class="frontSide">
                 <p class="title"></p>
                 <img :src="Testimonial.image2" alt="">
+                <p class="img-name">{{ Testimonial.jodi }}</p>
             </div>
             <div class="backSide">
                 <p class="title"></p>
@@ -30,6 +32,7 @@
             <div class="frontSide">
                 <p class="title"></p>
                 <img :src="Testimonial.image3" alt="">
+                <p class="img-name">{{ Testimonial.jodie }}</p>
             </div>
             <div class="backSide">
                 <p class="title"></p>
@@ -46,6 +49,7 @@
             <div class="frontSide">
                 <p class="title"></p>
                 <img :src="Testimonial.image4" alt="">
+                <p class="img-name">{{ Testimonial.niyaaz }}</p>
             </div>
             <div class="backSide">
                 <p class="title"></p>
@@ -58,6 +62,7 @@
             <div class="frontSide">
                 <p class="title"></p>
                 <img :src="Testimonial.image5" alt="">
+                <p class="img-name">{{ Testimonial.zubair }}</p>
             </div>
             <div class="backSide">
                 <p class="title"></p>
@@ -70,6 +75,7 @@
             <div class="frontSide">
                 <p class="title"></p>
                 <img :src="Testimonial.image6" alt="">
+                <p class="img-name">{{ Testimonial.matthew }}</p>
             </div>
             <div class="backSide">
                 <p class="title"></p>
@@ -153,9 +159,9 @@ export default {
   transform: rotateY(180deg);
 }
 .frontSide img{
-  width: 300px;
-  border-radius: 16px;
-  height: 350px;
+  width: 250px;
+  height: 300px;
+  margin-top: -16%;
 }
 .frontSide,
 .backSide {
@@ -203,6 +209,10 @@ export default {
   border-radius: 1em;
   filter: blur(20px);
   animation: animate 5s linear infinite;
+}
+.img-name{
+  margin-top: 100%;
+  margin-left: -30%;
 }
 
 @keyframes animate {
