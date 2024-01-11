@@ -399,7 +399,7 @@ export default {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 100%;
+    margin-top: 120%;
 }
 .chad{
    flex-direction: column;

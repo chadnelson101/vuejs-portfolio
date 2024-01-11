@@ -254,17 +254,5 @@ export default {
 h1{
   color: #008bf8;
 }
-/* .col{
-  flex-direction: column;
-  justify-content: center;
-  gap: 35px;
-  margin-top: 3%;
-}
-.col1{
-  flex-direction: column;
-  justify-content: center;
-  gap: 35px;
-  margin-top: 5%;
-} */
-  }
+ }
 </style>

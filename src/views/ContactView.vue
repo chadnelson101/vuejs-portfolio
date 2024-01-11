@@ -128,7 +128,7 @@ h1{
     height: 440px;
     background: linear-gradient(to right bottom, lightblue, grey);
     color: #fff;
-    margin-top: -34.2%;
+    margin-top: -35.3%;
     margin-left: 65%;
 }
 h1{
@@ -205,12 +205,12 @@ img{
     .contact-right{
       margin-left: 10%;
       margin-top: 5%;
-      width: 425px;
+      width: 350px;
       height: 420px;
     }
     img{
       margin-left: -25%;
-      margin-top: -35%;
+      margin-top: -40%;
     }
     .input-group{
       margin-left: 20%;

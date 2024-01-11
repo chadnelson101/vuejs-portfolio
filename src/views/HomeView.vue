@@ -288,8 +288,8 @@ circle:nth-child(5n) {
   }
 
   .img {
-    width: 250px;
-    margin-left: -20%;
+    width: 300px;
+    margin-left: -30%;
     margin-top: 20%;
     position: absolute;
   }

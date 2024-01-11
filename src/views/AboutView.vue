@@ -33,7 +33,48 @@ export default {
   </script>
 
   <style scoped>
-  
+ .abt-left {
+  position: relative;
+  display: inline-block;
+}
+
+ img {
+  height: auto;
+  width: 420px;
+  position: relative;
+  cursor: pointer;
+}
+
+img::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-280deg);
+  width: 160%;
+  height: 130%;
+  background-image: conic-gradient(#ff00bb 0deg, #ff00bb 90deg, transparent 130deg, transparent 180deg, #4530ff 180deg, #4530ff 270deg, transparent 310deg, transparent 360deg);
+  transition: transform 2s;
+}
+
+img:hover::before {
+  transform: translate(-50%, -50%) rotate(-100%);
+}
+
+img::after {
+  content: '';
+  color: #ddd;
+  position: absolute;
+  background-color: #000;
+  display: flex;
+  font-size: 17px;
+  height: 242px;
+  width: 192px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #about{
   align-items: center;
   padding: 80px 12%;
@@ -119,7 +160,7 @@ export default {
     margin-top: 50%;
   }
   #about p{
-    font-size: 10px;
+    font-size: 20px;
     margin-left: -75%;
     width: 300px;
   }

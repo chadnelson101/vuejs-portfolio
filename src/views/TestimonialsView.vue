@@ -244,15 +244,15 @@ export default {
 @media (max-width: 470px){
   .name{
   flex-direction: column;
-  justify-content: center;
+  margin-left: 19%;
   gap: 90px;
   margin-top: 5%;
 }
 .name1{
   flex-direction: column;
-  margin-left: 25%;
+  margin-left: 19%;
   gap: 90px;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 }
 </style>
