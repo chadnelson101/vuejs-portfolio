@@ -30,9 +30,9 @@
     height: 100vh;
     width: 100%;
   }
-footer{
-  background-color: #111;
-  width: 100%;
+  footer{
+    background-color: #111;
+    width: 100%;
 }
 .footercontainer{
   width: 100%;
@@ -76,5 +76,11 @@ footer{
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0px 5px;
+} 
+@media (max-width: 700px){
+  footer{
+  /* position: fixed;
+  bottom: -0%; */
+  }
 }
   </style>

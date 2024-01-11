@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="home">
       <h2 class="head">{{ Portfolio.title}}</h2>
       <h3 class="head1">{{ Portfolio.name }}</h3>
       <h4 class="head2">{{ Portfolio.is }}</h4>
@@ -113,7 +113,10 @@ export default {
   width: 100%;
   height: 100%;
 }
-
+#home{
+  min-height: 100vh;
+  position: relative;
+}
 circle {
   fill: #fff; 
   animation-name: snowing;
@@ -268,30 +271,30 @@ circle:nth-child(5n) {
 @media (max-width: 751px) {
   .head {
     font-size: 30px;
-    margin-left: -65%;
+    margin-left: 10%;
     margin-top: 20%;
   }
 
   .head1 {
     font-size: 30px;
-    margin-left: -45%;
-    margin-top: 13%;
+    margin-left: 8%;
+    margin-top: 18%;
   }
 
   .head2 {
     font-size: 30px;
-    margin-left: -6%;
+    margin-left: 10%;
     margin-top: 20%;
   }
 
   .img {
     width: 250px;
-    margin-left: 3%;
-    margin-top: -70%;
+    margin-left: -20%;
+    margin-top: 20%;
     position: absolute;
   }
   .btn{
-    margin-left: 10%;
+    margin-left: 7%;
     margin-top: 10%;
   }
 }

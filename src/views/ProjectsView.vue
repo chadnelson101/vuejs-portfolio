@@ -93,7 +93,7 @@ export default {
 
 <style scoped>
 .projects{
-  height: 105vh;
+  height: 110vh;
 }
  h1{
   color: #008bf8;
@@ -171,19 +171,21 @@ export default {
 }
 @media (max-width: 750px){
   .projects{
-  height: 105vh;
+    height: max-content; 
 }
  h1{
   color: #008bf8;
 }
 .col{
+  flex-direction: column;
   justify-content: center;
-  gap: 200px;
+  gap: 50px;
   margin-top: 3%;
 }
 .col1{
+  flex-direction: column;
   justify-content: center;
-  gap: 200px;
+  gap: 35px;
   margin-top: 5%;
 }
 
@@ -197,6 +199,7 @@ export default {
  transition: 0.5s ease-out;
  overflow: visible;
  box-shadow: 0 5px 5px 5px rgba(137, 5, 158, 0.2);
+ margin-left: 33%;
 }
 
 .card-details {
@@ -246,4 +249,22 @@ export default {
  opacity: 1;
 }
 }
+
+@media (min-width: 470px) {
+h1{
+  color: #008bf8;
+}
+/* .col{
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 3%;
+}
+.col1{
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 5%;
+} */
+  }
 </style>

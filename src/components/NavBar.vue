@@ -1,11 +1,11 @@
 <template>
    <nav class="navmenu">
-        <router-link to="/">Home</router-link>|
-        <router-link to="/about">About</router-link>|
-        <router-link to="/Resume">Resume</router-link>|
-        <router-link to="/Projects">Projects</router-link>|
-        <router-link to="/testimonials">Testimonial</router-link>|
-        <router-link to="/contact">Contact</router-link>|
+     <router-link to="/">Home</router-link>|
+     <router-link to="/about">About</router-link>|
+     <router-link to="/Resume">Resume</router-link>|
+     <router-link to="/Projects">Projects</router-link>|
+     <router-link to="/testimonials">Testimonial</router-link>|
+     <router-link to="/contact">Contact</router-link>|
     </nav>
 </template>
 
@@ -31,5 +31,11 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+@media (max-width: 750){
+  .nav a{
+    font-size: 100px;
+    text-align: center;
+  }
 }
 </style>

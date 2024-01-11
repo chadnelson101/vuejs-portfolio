@@ -134,7 +134,11 @@ export default {
     position: absolute;
     margin-top: -30px;
   }
- 
+  .chad{
+    display: flex;
+  justify-content: center;
+  gap: 90px;
+  }
   #education .edu-row{
     display: flex;
     justify-content: space-between;
@@ -256,7 +260,7 @@ export default {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: -10%;
+    margin-top: 5%;
 }
 .skills-head{
     width: 100%;
@@ -354,123 +358,39 @@ export default {
     padding: 70px 30px;
     /* width: 100%;
     height: 100vh; */
+    margin-left: 0%;
   }
   .education h1{
     position: absolute;
-    margin-top: -30px;
+    margin-top: -10px;
   }
- 
-  #education .edu-row{
+.skills-section{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 13%;
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 35px;
-    margin-left: 20px;
-  }
-  #education .edu-row .my-exp{
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 35px;
-  }
-  #education .edu-row-1 .exp .my-edu{
-    flex-basis: 50%;
-  }
-  #education .edu-row  h2{
-    font-weight: 600;
-    font-size: 25px;
-    margin: 15px 0;
-    color: #fff;
-    text-decoration: underline;
-  }
-  #education .edu-row h3{
-    font-size: 17px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  #education .edu-row .my-edu{
-    padding: 0 20px 0 20px;
-    border-left: 2px solid aqua;
-    position: relative;
-  }
-  #education .edu-row .my-edu::before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: -10px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: white;
-  }
-  
-  #education .edu-row .exp{
-    padding: 0 20px 0 20px;
-    border-left: 2px solid aqua;
-    position: relative;
-  }
-  #education .edu-row .exp::before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: -10px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: white;
-  }
-  #education .edu-row .sp-box{
-    padding: 4px 22px;
-    background-color: #fff;
-    border-radius: 30px;
-    font-size: 14px;
-    font-family: 400;
-    margin: 15px 0;
-    display: inline-block;
-  }
-  #education .edu-row p{
-    font-size: 20px;
-  }
-  #education .edu-row .exp{
-    padding: 0 20px  10px;
-    position: relative;
-  }
-  #education .edu-row .exp ul li{
-    margin: 30px 0;
-    margin-left: 20px;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  #education .edu-row .my-edu{
-    margin: 20px 0;
-  }
-  #education .edu-row .my-edu h3{
-    margin: 20px;
-    color: #fff;
-  }
-  #education .edu-row .exp h3{
-    margin: 20px 0;
-    color: #fff;
-  }
-  .exp li{
-    color: #fff;
-  }
-  .exp p{
-    color: lightblue;
-  }
-  .my-edu p{
-    color: #fff;
-  }
-.edu-heading h1{
-  color: #008bf8;
-  text-decoration: underline;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 90%;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: poppins;
+.chad{
+   flex-direction: column;
+  justify-content: center;
+  gap: 90px;
+  }
 }
-
+@media (max-width: 475px) {
+  #education {
+    padding: 70px 30px;
+    /* width: 100%;
+    height: 100vh; */
+    margin-left: 0%;
+  }
+  .education h1{
+    position: absolute;
+    margin-top: -10px;
+  }
 .skills-section{
     width: 100%;
     height: 100vh;
@@ -481,95 +401,10 @@ export default {
     flex-direction: column;
     margin-top: 100%;
 }
-.skills-head{
-    width: 100%;
-    margin-bottom: 100px;
-    display: grid;
-    place-items: center;
-    text-align: center;
-}
-.skills-head h2{
-    font-size: 30px;
-    margin-bottom: -5px;
-    color: aliceblue;
-}
-.skills-main{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 100px;
-    grid-column-gap: 100px;
-}
-.skills-main .skill-bar .info{
-  align-items: center;
-  padding:  0 10px;
-    display: flex;
-    justify-content: space-between;
-}
-.skill-bar .info p:nth-child(2){
-    font-weight: 500;
-}
-.skill-bar .bar{
-    width: 70%;
-    height: 10px;
-    background: #fff;
-    border-radius: 25px;
-    margin-top: 5px;
-    position: relative;
-}
-.skill-bar .bar span{
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    background-color: lightblue;
-    border-radius: 25px;
-}
-.skill-bar .bar .html{
-    width: 90%;
-    animation: html 2s;
-}
-.skill-bar p{
-  color: #fff;
-}
-@keyframes html {
-    0%{
-        width: 0%;
-    }100%{
-        width: 90%;
-    }
-}
-.skill-bar .bar .css{
-    width: 85%;
-    animation: css 2s;
-}
-@keyframes css {
-    0%{
-        width: 0%;
-    }100%{
-        width: 85%;
-    }
-}
-.skill-bar .bar .js{
-    width: 80%;
-    animation: js 2s;
-}
-@keyframes js {
-    0%{
-        width: 0%;
-    }100%{
-        width: 80%;
-    }
-}
-.skill-bar .bar .bs{
-    width: 80%;
-    animation: bs 2s;
-}
-@keyframes bs {
-    0%{
-        width: 0%;
-    }100%{
-        width: 80%;
-    }
-}
+.chad{
+   flex-direction: column;
+  justify-content: center;
+  gap: 90px;
+  }
 }
 </style>

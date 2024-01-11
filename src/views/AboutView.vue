@@ -85,12 +85,47 @@ export default {
     width: 100%;
     height: 100vh;
   }
-  img{
+  .abt-left img{
     margin-top: -500px;
+    position: absolute;
+    margin-left: 10%;
+    width: 350px;
+  }
+  .about{
+    margin-left: -95%; 
+    margin-top: 20%;
+  }
+  #about p{
+    font-size: 20px;
+    margin-left: -55%;
+  }
+  #about h1{
+    margin-top: 130%;
+    margin-left: -55%;
+  }
+}
+@media (max-width: 470px) {
+  body{
+    width: 100%;
+    height: 100vh;
+  }
+  .abt-left img{
+    margin-top: -80%;
+    margin-left: 10%;
+    width: 250px;
   }
   .about{
     margin-left: -95%; 
     margin-top: 50%;
+  }
+  #about p{
+    font-size: 10px;
+    margin-left: -75%;
+    width: 300px;
+  }
+  #about h1{
+    margin-top: 130%;
+    margin-left: -76%;
   }
 }
   </style>

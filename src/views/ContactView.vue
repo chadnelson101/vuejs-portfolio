@@ -95,6 +95,9 @@ export default {
   </script>
 
 <style scoped>
+body{
+  height: 60vh;
+}
 .contact{
   height: 100vh;
 }
@@ -109,6 +112,8 @@ h1{
 .contact-box{
     background-color: #fff;
     display: flex;
+    margin-top: 0auto; 
+    height: max-content;
 }
 
 .contact-left{
@@ -120,11 +125,11 @@ h1{
     flex-basis: 40%;
     padding: 40px;
     width: 300px;
-    height: 400px;
+    height: 440px;
     background: linear-gradient(to right bottom, lightblue, grey);
     color: #fff;
-    margin-top: -33%;
-    margin-left: 64%;
+    margin-top: -34.2%;
+    margin-left: 65%;
 }
 h1{
     margin-bottom: 10px;
@@ -138,7 +143,6 @@ h1{
 .input-row .input-group{
     flex-basis: 45%;
 }
-
 input{
     width: 100%;
     border: none;
@@ -194,17 +198,59 @@ img{
   position: absolute;;
   width: 300px;
   height: 200px;
-  margin-left: 16.5%;
-  margin-top: -14%;
+  margin-left: 18%;
+  margin-top: -15%;
 }
 @media (max-width: 750px){
     .contact-right{
-      margin-left: 9%;
-      margin-top: 10%;
+      margin-left: 10%;
+      margin-top: 5%;
+      width: 425px;
+      height: 420px;
+    }
+    img{
+      margin-left: -25%;
+      margin-top: -35%;
+    }
+    .input-group{
+      margin-left: 20%;
+    }
+    textarea{
+      margin-left: 10%;
+    }
+    button{
+      margin-left: 20%;
+    }
+  .contact{
+  height: 220vh;
+}
+}
+@media (max-width: 475px){
+  .contact-box{
+   height: max-content;
+   margin-top: auto; 
+}
+.contact-right{
+      margin-left: 10%;
+      margin-top: 5%;
+      width: 280px;
+      height: 500px;
     }
     img{
       margin-left: -33%;
-      margin-top: -45%;
+      margin-top: -60%;
     }
+    .input-group{
+      margin-left: 20%;
+    }
+    textarea{
+      margin-left: 10%;
+    }
+    button{
+      margin-left: 20%;
+    }
+  .contact{
+    height: 220vh;
+}
 }
 </style>
