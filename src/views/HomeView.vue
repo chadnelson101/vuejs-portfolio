@@ -108,14 +108,7 @@ export default {
 }
 </script>
 
-<style>
-
-body {
-  /* min-height: 100vh; */
-  background: #434344;
-  /* height: 100%; */
-}
-
+<style scoped>
 .svg-snowscene {
   width: 100%;
   height: 100%;
@@ -165,13 +158,13 @@ circle:nth-child(5n) {
 .head1 {
   font-size: 70px;
   color: #fff;
-  margin-left: -60%;
+  margin-left: -65%;
 }
 
 .head2 {
   font-size: 70px;
   color: #fff;
-  margin-left: -27%;
+  margin-left: -30%;
 }
 .head{
     animation-name: animate__bounceInLeft;
@@ -274,19 +267,19 @@ circle:nth-child(5n) {
 
 @media (max-width: 751px) {
   .head {
-    font-size: 50px;
-    margin-left: -80%;
-    margin-top: 8%;
+    font-size: 30px;
+    margin-left: -65%;
+    margin-top: 20%;
   }
 
   .head1 {
-    font-size: 50px;
-    margin-left: -50%;
+    font-size: 30px;
+    margin-left: -45%;
     margin-top: 13%;
   }
 
   .head2 {
-    font-size: 50px;
+    font-size: 30px;
     margin-left: -6%;
     margin-top: 20%;
   }
@@ -294,8 +287,12 @@ circle:nth-child(5n) {
   .img {
     width: 250px;
     margin-left: 3%;
-    margin-top: -60%;
+    margin-top: -70%;
     position: absolute;
+  }
+  .btn{
+    margin-left: 10%;
+    margin-top: 10%;
   }
 }
 </style>

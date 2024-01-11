@@ -30,5 +30,10 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+body {
+  /* min-height: 100vh; */
+  background: #434344;
+  /* height: 100%; */
+}
 
 </style>

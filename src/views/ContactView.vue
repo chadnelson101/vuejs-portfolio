@@ -197,4 +197,14 @@ img{
   margin-left: 16.5%;
   margin-top: -14%;
 }
+@media (max-width: 750px){
+    .contact-right{
+      margin-left: 9%;
+      margin-top: 10%;
+    }
+    img{
+      margin-left: -33%;
+      margin-top: -45%;
+    }
+}
 </style>

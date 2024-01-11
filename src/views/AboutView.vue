@@ -81,17 +81,16 @@ export default {
 }
 
 @media (max-width: 750px) {
-  .about{
+  body{
     width: 100%;
+    height: 100vh;
   }
-  #about img{
-    margin-left: 10%;
-    margin-top: -50%;
+  img{
+    margin-top: -500px;
   }
-  h1{
-    margin-left: -190%;
-    margin-top: 0%;
+  .about{
+    margin-left: -95%; 
+    margin-top: 50%;
   }
-
 }
   </style>

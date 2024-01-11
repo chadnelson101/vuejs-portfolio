@@ -107,7 +107,22 @@
            "heading4": "Zane Samuels Construction",
            "subheading2": " Admin",
            "year3": "2023",
-           "jobdescription1": "I worked on serval occasions at Zane Samuels Construction as a admin as a  part-time job."
+           "jobdescription1": "I worked on serval occasions at Zane Samuels Construction as a admin as a  part-time job.",
+
+           "heading5": "My",
+           "subheading3": "Skills",
+
+           "skills": "html",
+           "percentage": "75%",
+
+           "skills1": "css",
+           "percentage1": "80%",
+
+           "skills2": "Javascript",
+           "percentage2": "70%",
+
+           "skills3": "Bootstrap",
+           "percentage3": "83%"
 
         }
     ]
