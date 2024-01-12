@@ -4,12 +4,12 @@ import axios from 'axios';
 
 export default createStore({
   state: {
-    Portfolio: '',
-    About: '',
-    Contact: '',
-    Testimonials: '',
-    Projects: '',
-    Resume: '',
+    Portfolio: null,
+    About: null,
+    Contact: null,
+    Testimonials: null,
+    Projects: null,
+    Resume: null,
   },
   getters: {},
   mutations: {
@@ -35,12 +35,12 @@ export default createStore({
   actions: {
     async fetchPortfolio({ commit }) {
       try {
-        const portfolioResponse = await axios.get("http://localhost:3000/Portfolio");
-        const aboutResponse = await axios.get("http://localhost:3000/About");
-        const contactResponse = await axios.get("http://localhost:3000/Contact");
-        const TestimonialsResponse = await axios.get("http://localhost:3000/Testimonials");
-        const ProjectsResponse = await axios.get("http://localhost:3000/Projects");
-        const ResumeResponse = await axios.get("http://localhost:3000/Resume");
+        const portfolioResponse = axios.get(" https://chadnelson101.github.io/DATA/");
+        const aboutResponse = axios.get(" https://chadnelson101.github.io/DATA/");
+        const contactResponse = axios.get(" https://chadnelson101.github.io/DATA/");
+        const TestimonialsResponse = axios.get(" https://chadnelson101.github.io/DATA/");
+        const ProjectsResponse = axios.get(" https://chadnelson101.github.io/DATA/");
+        const ResumeResponse = axios.get(" https://chadnelson101.github.io/DATA/");
 
         commit('setPortfolio', portfolioResponse.data);
         commit('setAbout', aboutResponse.data);

@@ -1,6 +1,6 @@
 <template>
-  <h1>{{ Projects.heading }}</h1>
-  <div class="projects">
+  <div class="projects"  v-for="Projects in Projects" :key="Projects">
+    <h1>{{ Projects.heading }}</h1>
   <div class="col">
   <div class="card">
   <div class="card-details">
@@ -80,10 +80,10 @@ export default {
     }
   },
   mounted() {
-      axios.get('http://localhost:3000/Projects')
+      axios.get('https://chadnelson101.github.io/DATA/')
           .then(res =>{
             console.log(res.data);
-            this.Projects = res.data[0]
+            this.Projects = res.data.Projects
           })
           .catch(error => console.error('Error fetching data:', error));
 
@@ -93,7 +93,7 @@ export default {
 
 <style scoped>
 .projects{
-  height: 110vh;
+  height: 120vh;
 }
  h1{
   color: #008bf8;
@@ -172,6 +172,9 @@ export default {
 @media (max-width: 750px){
   .projects{
     height: max-content; 
+}
+.projects .col{
+  margin-left: -10%;
 }
  h1{
   color: #008bf8;

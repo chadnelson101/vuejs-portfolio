@@ -155,19 +155,19 @@ circle:nth-child(5n) {
 .head {
   font-size: 70px;
   color: #fff;
-  margin-left: -75%;
+  margin-left: -78%;
 }
 
 .head1 {
   font-size: 70px;
   color: #fff;
-  margin-left: -65%;
+  margin-left: -70%;
 }
 
 .head2 {
   font-size: 70px;
   color: #fff;
-  margin-left: -30%;
+  margin-left: -45%;
 }
 .head{
     animation-name: animate__bounceInLeft;
@@ -295,7 +295,7 @@ circle:nth-child(5n) {
   }
   .btn{
     margin-left: 7%;
-    margin-top: 10%;
+    margin-top: 30%;
   }
 }
 </style>

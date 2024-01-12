@@ -129,7 +129,7 @@ img::after {
   .abt-left img{
     margin-top: -500px;
     position: absolute;
-    margin-left: 10%;
+    margin-left: 20%;
     width: 350px;
   }
   .about{
@@ -138,7 +138,7 @@ img::after {
   }
   #about p{
     font-size: 20px;
-    margin-left: -55%;
+    margin-left: -65%;
   }
   #about h1{
     margin-top: 130%;
@@ -150,14 +150,15 @@ img::after {
     width: 100%;
     height: 100vh;
   }
-  .abt-left img{
-    margin-top: -80%;
-    margin-left: 10%;
+  #about img{
+    position: absolute;
+    margin-top: -100% ;
+    margin-left: 100%;
     width: 250px;
   }
   .about{
     margin-left: -95%; 
-    margin-top: 50%;
+    margin-top: -50%;
   }
   #about p{
     font-size: 20px;

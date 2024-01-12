@@ -2,6 +2,7 @@
   <div class="contact">
   <form action="https://formspree.io/f/mjvqlbaa"
     method="POST"
+    target="_blank"
     >
     <div class="container">
       <h1>{{ Contact.heading }}</h1>
@@ -128,7 +129,7 @@ h1{
     height: 440px;
     background: linear-gradient(to right bottom, lightblue, grey);
     color: #fff;
-    margin-top: -35.3%;
+    margin-top: -34.2%;
     margin-left: 65%;
 }
 h1{
@@ -205,12 +206,13 @@ img{
     .contact-right{
       margin-left: 10%;
       margin-top: 5%;
-      width: 350px;
+      width: 505px;
       height: 420px;
     }
     img{
-      margin-left: -25%;
-      margin-top: -40%;
+      margin-left: 10%;
+      margin-top: -50%;
+      width: 200px;
     }
     .input-group{
       margin-left: 20%;

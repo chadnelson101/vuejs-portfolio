@@ -9,15 +9,14 @@
 </div>
 
 </div>
-
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            loading: true,
-        };
+   data() {
+      return {
+        loading: true,
+      };
     },
     methods: {
         fetchData() {
@@ -25,12 +24,22 @@ export default {
 
             setTimeout(() => {
                 this.loading = false
-            }, 2000)
+            },)
         }
     },
     mounted() {
-        this.fetchData();
-    }
+      // Fetch data from the provided URL
+      fetch('https://chadnelson101.github.io/DATA/')
+        .then(response => response.json())
+        .then(data => {
+          this.data = data;
+          this.loading = false;
+        })  
+        .catch(error => {
+          console.error('Error fetching data:', error);
+          this.loading = false;
+        });
+    },
 }
 </script>
 

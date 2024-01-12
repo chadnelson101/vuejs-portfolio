@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="nav">
    <NavBar/>
    <SpinnerView/>
    <router-view/>
@@ -33,13 +33,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  /* color: #2c3e50; */
 }
 body {
-  /* height: max-content !important; */
-  /* min-height: 100vh; */
   background: #434344;
-  /* height: 100%; */
   height: max-content;
 }
 .logo{

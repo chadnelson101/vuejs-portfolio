@@ -1,6 +1,6 @@
 <template>
-
-  <div class="name">
+<div class="chad" v-for="Testimonial in Testimonials" :key="Testimonial">
+  <div class="name" >
   <div class="myCard">
         <div class="innerCard">
             <div class="frontSide">
@@ -12,10 +12,10 @@
                 <p class="title"></p>
                 <p>{{ Testimonial.para1 }}</p>
             </div>
-        </div>
-    </div>
+       </div>
+  </div>
   <div class="myCard">
-        <div class="innerCard">
+    <div class="innerCard">
             <div class="frontSide">
                 <p class="title"></p>
                 <img :src="Testimonial.image2" alt="">
@@ -24,29 +24,29 @@
             <div class="backSide">
                 <p class="title"></p>
                 <p>{{ Testimonial.para2 }}</p>
+              </div>
             </div>
-        </div>
-    </div>
-  <div class="myCard">
-        <div class="innerCard">
-            <div class="frontSide">
-                <p class="title"></p>
-                <img :src="Testimonial.image3" alt="">
-                <p class="img-name">{{ Testimonial.jodie }}</p>
+          </div>
+          
+          <div class="myCard">
+            <div class="innerCard">
+          <div class="frontSide">
+              <p class="title"></p>
+              <img :src="Testimonial.image3" alt="">
+              <p class="img-name">{{ Testimonial.jodie }}</p>
             </div>
-            <div class="backSide">
-                <p class="title"></p>
-                <p>{{ Testimonial.para3 }}</p>
-            </div>
-        </div>
-    </div>
+          <div class="backSide">
+              <p class="title"></p>
+              <p>{{ Testimonial.para3 }}</p>
+          </div>
+      </div>
+  </div>
+  </div>  
 
-</div>
-
-<div class="name1">
-  <div class="myCard">
+          <div class="name1">
+            <div class="myCard">
         <div class="innerCard">
-            <div class="frontSide">
+          <div class="frontSide">
                 <p class="title"></p>
                 <img :src="Testimonial.image4" alt="">
                 <p class="img-name">{{ Testimonial.niyaaz }}</p>
@@ -56,9 +56,9 @@
                 <p>{{ Testimonial.para4 }}</p>
             </div>
         </div>
-    </div>
-  <div class="myCard">
-        <div class="innerCard">
+        </div>
+        <div class="myCard">
+    <div class="innerCard">
             <div class="frontSide">
                 <p class="title"></p>
                 <img :src="Testimonial.image5" alt="">
@@ -70,7 +70,7 @@
             </div>
         </div>
     </div>
-  <div class="myCard">
+    <div class="myCard">
         <div class="innerCard">
             <div class="frontSide">
                 <p class="title"></p>
@@ -84,7 +84,9 @@
         </div>
     </div>
     </div>
-</template>
+      </div>
+
+      </template>
 
 <script>
 import axios from 'axios';
@@ -92,16 +94,16 @@ export default {
   name: 'my-Portfolio',
   data(){
     return {
-      Testimonial:[]
+      Testimonials:[]
     }
   },
   mounted() {
-      axios.get('http://localhost:3000/Testimonials')
+      axios.get('https://chadnelson101.github.io/DATA/')
           .then(res =>{
             console.log(res.data);
-            this.Testimonial = res.data[0]
+            this.Testimonials = res.data.Testimonials
           })
-          .catch(error => console.error('Error fetching data:', error));
+          .catch(error => alert('Error fetching data:', error));
 
     },
   }
@@ -117,16 +119,16 @@ export default {
 .name1{
   display: flex;
   justify-content: center;
-  gap: 90px;
+  gap: 100px;
   margin-top: 5%;
 }
 
-.card-grid {
+/* .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 50px;
   justify-content: space-around;
-}
+} */
 
 .myCard {
   background-color: transparent;
@@ -256,3 +258,59 @@ export default {
 }
 }
 </style>
+
+  <!-- <div class="myCard">
+        <div class="innerCard">
+            <div class="frontSide">
+                <p class="title"></p>
+                <img :src="Testimonial.image3" alt="">
+                <p class="img-name">{{ Testimonial.jodie }}</p>
+              </div>
+            <div class="backSide">
+                <p class="title"></p>
+                <p>{{ Testimonial.para3 }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="name1">
+  <div class="myCard">
+        <div class="innerCard">
+          <div class="frontSide">
+                <p class="title"></p>
+                <img :src="Testimonial.image4" alt="">
+                <p class="img-name">{{ Testimonial.niyaaz }}</p>
+            </div>
+            <div class="backSide">
+                <p class="title"></p>
+                <p>{{ Testimonial.para4 }}</p>
+            </div>
+        </div>
+  <! <div class="myCard">
+    <div class="innerCard">
+            <div class="frontSide">
+                <p class="title"></p>
+                <img :src="Testimonial.image5" alt="">
+                <p class="img-name">{{ Testimonial.zubair }}</p>
+            </div>
+            <div class="backSide">
+                <p class="title"></p>
+                <p>{{ Testimonial.para5 }}</p>
+            </div>
+        </div>
+    </div>
+  <div class="myCard">
+        <div class="innerCard">
+            <div class="frontSide">
+                <p class="title"></p>
+                <img :src="Testimonial.image6" alt="">
+                <p class="img-name">{{ Testimonial.matthew }}</p>
+            </div>
+            <div class="backSide">
+                <p class="title"></p>
+                <p>{{ Testimonial.para6 }}</p>
+            </div>
+        </div>
+    </div>
+    </div> -->

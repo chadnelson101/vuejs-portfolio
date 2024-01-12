@@ -9,7 +9,7 @@
     </div>  
     <div>
       <div class="footerbottom">
-        <p>Copyright &copy;2023; designed by <span class="designer">Chad</span></p>
+        <p>Copyright &copy;2024; designed by <span class="designer">Chad</span></p>
       </div>
     </div>
   </div>
@@ -78,9 +78,5 @@
   margin: 0px 5px;
 } 
 @media (max-width: 700px){
-  footer{
-  /* position: fixed;
-  bottom: -0%; */
-  }
 }
   </style>

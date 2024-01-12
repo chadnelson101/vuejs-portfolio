@@ -1,4 +1,5 @@
 <template>
+  <div  v-for="Resume in Resume" :key="Resume">
   <section class="edu-heading" id="education">
             <h1 class="sub-heading">{{ Resume.subheading }}</h1>
 
@@ -97,8 +98,7 @@
             </div>
             </div>
           </div>
-
-
+        </div>
 
 </template>
 
@@ -112,10 +112,10 @@ export default {
     }
   },
   mounted() {
-      axios.get('http://localhost:3000/Resume')
+      axios.get('https://chadnelson101.github.io/DATA/')
       .then(res =>{
         console.log(res.data);
-        this.Resume = res.data[0]
+        this.Resume = res.data.Resume
           })
           .catch(error => console.error('Error fetching data:', error));
           
