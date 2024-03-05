@@ -1,9 +1,11 @@
 <template>
-  <div id="home">
+  <div v-for="Portfolio in Portfolio" :key="Portfolio">
+    <div id="home">
       <h2 class="head">{{ Portfolio.title}}</h2>
       <h3 class="head1">{{ Portfolio.name }}</h3>
       <h4 class="head2">{{ Portfolio.is }}</h4>
       <img class="img" :src="Portfolio.image" >
+    </div>
   </div>
   <div id="btn">
     <a href="https://drive.google.com/file/d/15Y7dzuXFWqXgUVhp9B3UYvy1eziFW8TD/view?usp=sharing"><button class="btn">Download CV</button></a>
@@ -83,10 +85,10 @@ export default {
     };
   },
   mounted() {
-    axios.get('http://localhost:3000/Portfolio')
+    axios.get('https://chadnelson101.github.io/DATA/')
       .then(res => {
         console.log(res.data);
-        this.Portfolio = res.data[0];
+        this.Portfolio = res.data.Portfolio;
       })
       .catch(error => console.error('Error fetching data:', error));
 
@@ -155,19 +157,19 @@ circle:nth-child(5n) {
 .head {
   font-size: 70px;
   color: #fff;
-  margin-left: -78%;
+  margin-left: -67%;
 }
 
 .head1 {
   font-size: 70px;
   color: #fff;
-  margin-left: -70%;
+  margin-left: -60%;
 }
 
 .head2 {
   font-size: 70px;
   color: #fff;
-  margin-left: -45%;
+  margin-left: -35%;
 }
 .head{
     animation-name: animate__bounceInLeft;

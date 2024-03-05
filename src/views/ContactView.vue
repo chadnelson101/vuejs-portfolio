@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div v-for="Contact in Contact" :key="Contact" class="contact">
   <form action="https://formspree.io/f/mjvqlbaa"
     method="POST"
     target="_blank"
@@ -83,10 +83,10 @@ export default {
     }
   },
   mounted() {
-      axios.get('http://localhost:3000/Contact')
+      axios.get('https://chadnelson101.github.io/DATA/')
           .then(res =>{
             console.log(res.data);
-            this.Contact = res.data[0]
+            this.Contact = res.data.Contact
           })
           .catch(error => console.error('Error fetching data:', error));
 

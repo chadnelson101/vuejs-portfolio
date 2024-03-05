@@ -123,13 +123,6 @@ export default {
   margin-top: 5%;
 }
 
-/* .card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  justify-content: space-around;
-} */
-
 .myCard {
   background-color: transparent;
   width: 300px;
@@ -180,17 +173,6 @@ export default {
   box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
   font-weight: 700;
 }
-
-.frontSide,
-.frontSide::before {
-  background: lightblue;
-}
-
-.backSide,
-.backSide::before {
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-}
-
 .backSide {
   transform: rotateY(180deg);
 }

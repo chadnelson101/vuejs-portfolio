@@ -1,4 +1,5 @@
 <template>
+  <div v-for="About in About" :key="About">
   <section id="about">
     <div class="abt-left">
       <img :src="About.image">
@@ -8,6 +9,7 @@
   <p>{{ About.info }}</p>
  </div>
 </section>
+</div>
 </template>
 
 <script>
@@ -20,10 +22,10 @@ export default {
     }
   },
   mounted() {
-      axios.get('http://localhost:3000/About')
+      axios.get('https://chadnelson101.github.io/DATA/')
           .then(res =>{
             console.log(res.data);
-            this.About = res.data[0]
+            this.About = res.data.About
           })
           .catch(error => console.error('Error fetching data:', error));
 
