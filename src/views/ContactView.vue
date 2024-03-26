@@ -66,7 +66,7 @@
 </table>
     </form>
     <div class="image">
-      <a href="https://maps.app.goo.gl/ZJR5Zom8tNmEp36EA">
+      <a href="https://maps.app.goo.gl/ZJR5Zom8tNmEp36EA" target="_blank">
         <img :src="Contact.image">
       </a>
     </div>
@@ -126,10 +126,10 @@ h1{
     flex-basis: 40%;
     padding: 40px;
     width: 300px;
-    height: 440px;
+    height: 441px;
     background: linear-gradient(to right bottom, lightblue, grey);
     color: #fff;
-    margin-top: -34.2%;
+    margin-top: -37.7%;
     margin-left: 65%;
 }
 h1{

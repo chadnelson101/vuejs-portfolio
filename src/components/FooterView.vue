@@ -2,10 +2,8 @@
     <footer>
   <div class="footercontainer">
     <div class="socialicons">
-      <a href="https://www.instagram.com/chaddo_stevens?igsh=MWFraG05Mmt3MDhzNg=="><i class='bx bxl-instagram'></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100086536845398"><i class='bx bxl-facebook' ></i></a>
-      <a href="https://x.com/chadnelson279?t=JnPtS7D9So5EWUUvHkfuSQ&s=09"><i class='bx bxl-twitter' ></i></a>
-      <a href=""><i class='bx bxl-youtube' ></i></a>
+      <a href=""><i class='bx bxl-linkedin-square'></i></a>
+      <a href="https://github.com/chadnelson101" target="_blank"><i class='bx bxl-github' ></i></a>
     </div>  
     <div>
       <div class="footerbottom">

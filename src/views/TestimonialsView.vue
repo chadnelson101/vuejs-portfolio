@@ -167,11 +167,13 @@ export default {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  /* border: 1px solid rgba(255, 255, 255, 0.8); */
   border-radius: 1rem;
   color: white;
   box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
   font-weight: 700;
+}
+.img-name{
+  justify-content: center;
 }
 .backSide {
   transform: rotateY(180deg);
@@ -196,6 +198,7 @@ export default {
 .img-name{
   margin-top: 100%;
   margin-left: -30%;
+  
 }
 
 @keyframes animate {

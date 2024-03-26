@@ -8,7 +8,7 @@
     </div>
   </div>
   <div id="btn">
-    <a href="https://drive.google.com/file/d/15Y7dzuXFWqXgUVhp9B3UYvy1eziFW8TD/view?usp=sharing"><button class="btn">Download CV</button></a>
+    <a href="https://drive.google.com/file/d/15Y7dzuXFWqXgUVhp9B3UYvy1eziFW8TD/view?usp=sharing" target="_blank"><button class="btn">Download CV</button></a>
   </div>
   <svg class="svg-snowscene" xmlns="http://www.w3.org/2000/svg">
   <circle />
@@ -157,7 +157,7 @@ circle:nth-child(5n) {
 .head {
   font-size: 70px;
   color: #fff;
-  margin-left: -67%;
+  margin-left: -63%;
 }
 
 .head1 {
@@ -167,7 +167,7 @@ circle:nth-child(5n) {
 }
 
 .head2 {
-  font-size: 70px;
+  font-size: 60px;
   color: #fff;
   margin-left: -35%;
 }

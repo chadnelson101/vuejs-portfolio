@@ -59,42 +59,31 @@
         </div>
 
         <div class="skills-main">
-            <div class="skill-bar">
-                <div class="info">
-                    <p>{{ Resume.skills }}</p>
-                    <P>{{ Resume.percentage }}</P>
-                </div>
-                <div class="bar">
-                    <span class="html"></span>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>{{ Resume.skills1 }}</p>
-                    <P>{{ Resume.percentage1 }}</P>
-                </div>
-                <div class="bar">
-                    <span class="css"></span>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>{{ Resume.skills2 }}</p>
-                    <P>{{ Resume.percentage2 }}</P>
-                </div>
-                <div class="bar">
-                    <span class="js"></span>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>{{ Resume.skills3 }}</p>
-                    <P>{{ Resume.percentage3 }}</P>
-                </div>
-                <div class="bar">
-                    <span class="bs"></span>
-                </div>
-            </div>
+          <div class="skills">
+            <p>{{ Resume.p }}</p>
+            <img src="https://i.ibb.co/SdKH0ZQ/html5-logo-2-removebg-preview.png" alt="">  
+          </div>
+          <div class="skills">
+            <p>BOOTSTRAP</p>
+            <img src="https://i.ibb.co/4s0c1N5/bootstrap-logo-shadow-removebg-preview.png" alt="">
+          </div>
+          <div class="skills">
+            <p>jAVASCRIPT</p>
+            <img src="https://i.ibb.co/ZKMk5YM/png-clipart-javascript-logo-computer-icons-vue-js-angle-text-removebg-preview.png" alt="">
+          </div>
+          <div class="skills">
+            <p>NODE JS</p>
+            <img src="https://i.ibb.co/8g7cjhh/node-js-logo-removebg-preview.png" alt="">
+          </div>
+          <div class="skills">
+            <p>VUE JS</p>
+            <img src="https://i.ibb.co/MRQSbdj/Vue-js-logo.png" alt="">
+          </div>
+          <div class="skills">
+            <p>MYSQL</p>
+            <img src="https://i.ibb.co/nM8FdR8/database-mysql-removebg-preview.png" alt="">
+          </div>
+
             </div>
             </div>
           </div>
@@ -136,8 +125,8 @@ export default {
   }
   .chad{
     display: flex;
-  justify-content: center;
-  gap: 90px;
+    justify-content: center;
+    gap: 90px;
   }
   #education .edu-row{
     display: flex;
@@ -243,13 +232,14 @@ export default {
   color: #008bf8;
   text-decoration: underline;
   margin-top: 5%;
+  
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: poppins;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .skills-section{
@@ -269,15 +259,16 @@ export default {
     place-items: center;
     text-align: center;
 }
-.skills-head h2{
+.skills-head H2{
     font-size: 30px;
     margin-bottom: -5px;
-    color: aliceblue;
+    color: #008bf8;
+  text-decoration: underline;
 }
 .skills-main{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 100px;
     grid-column-gap: 100px;
 }
@@ -290,69 +281,11 @@ export default {
 .skill-bar .info p:nth-child(2){
     font-weight: 500;
 }
-.skill-bar .bar{
-    width: 70%;
-    height: 10px;
-    background: #fff;
-    border-radius: 25px;
-    margin-top: 5px;
-    position: relative;
-}
-.skill-bar .bar span{
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    background-color: lightblue;
-    border-radius: 25px;
-}
-.skill-bar .bar .html{
-    width: 90%;
-    animation: html 2s;
-}
+
+
 .skill-bar p{
   color: #fff;
 }
-@keyframes html {
-    0%{
-        width: 0%;
-    }100%{
-        width: 90%;
-    }
-}
-.skill-bar .bar .css{
-    width: 85%;
-    animation: css 2s;
-}
-@keyframes css {
-    0%{
-        width: 0%;
-    }100%{
-        width: 85%;
-    }
-}
-.skill-bar .bar .js{
-    width: 80%;
-    animation: js 2s;
-}
-@keyframes js {
-    0%{
-        width: 0%;
-    }100%{
-        width: 80%;
-    }
-}
-.skill-bar .bar .bs{
-    width: 80%;
-    animation: bs 2s;
-}
-@keyframes bs {
-    0%{
-        width: 0%;
-    }100%{
-        width: 80%;
-    }
-}
-
 @media (max-width: 751px) {
   #education {
     padding: 70px 30px;
@@ -380,11 +313,20 @@ export default {
   gap: 90px;
   }
 }
+.skills img{
+  width: 100px;
+}
+.skills p{
+  color: #fff;
+}
+.skills {
+    border: 2px solid #fff;
+    border-radius: 90px;
+    width: 250px;
+}
 @media (max-width: 475px) {
   #education {
     padding: 70px 30px;
-    /* width: 100%;
-    height: 100vh; */
     margin-left: 0%;
   }
   .education h1{
