@@ -96,7 +96,7 @@ export default {
   height: 130vh;
 }
  h1{
-  color: #008bf8;
+  color:black;
 }
 .col{
   display: flex;
@@ -136,7 +136,7 @@ export default {
  width: 60%;
  border-radius: 1rem;
  border: none;
- background-color: #008bf8;
+ background-color: white;
  color: #fff;
  font-size: 2rem;
  padding: .5rem 1rem;
@@ -165,7 +165,12 @@ export default {
  border-color: rgba(137, 5, 158, 0.2);
  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
-
+.bxl-github:before {
+    color: black;
+}
+.bxl-netlify:before {
+  color: black;
+}
 .card:hover .card-button {
  transform: translate(-50%, 50%);
  opacity: 1;
@@ -178,7 +183,7 @@ export default {
   margin-left: -10%;
 }
  h1{
-  color: #008bf8;
+  color:black;
 }
 .col{
   flex-direction: column;

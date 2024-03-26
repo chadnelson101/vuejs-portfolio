@@ -51,15 +51,15 @@
 
 <table>
     <tr>
-        <td>{{ Contact.email }}</td>
+        <td>{{ Contact.email }}:</td>
         <td class="email">{{ Contact.mail }}</td>
     </tr>
     <tr>
-        <td>{{ Contact.phone }}</td>
+        <td>{{ Contact.phone }}:</td>
         <td class="number">{{ Contact.number }}</td>
     </tr>
     <tr>
-        <td>{{ Contact.address }}</td>
+        <td>{{ Contact.address }}:</td>
         <td class="add">{{ Contact.add }}</td>
     </tr>
 
@@ -103,7 +103,8 @@ body{
   height: 100vh;
 }
 h1{
-  color: #008bf8;
+  color: black;
+  font-weight: bold;
 }
 .container{
     width: 80%;
@@ -127,9 +128,9 @@ h1{
     padding: 40px;
     width: 300px;
     height: 441px;
-    background: linear-gradient(to right bottom, lightblue, grey);
+    background:black;
     color: #fff;
-    margin-top: -37.7%;
+    margin-top: -39.1%;
     margin-left: 65%;
 }
 h1{
@@ -162,11 +163,11 @@ textarea{
 label{
     margin-bottom: 6px;
     display: block;
-    color: #1c00b5;
+    color: black;
 }
 
 button{
-    background: #1c00b5;
+    background: black;
     width: 100px;
     border: none;
     outline: none;
@@ -227,32 +228,29 @@ img{
   height: 220vh;
 }
 }
-@media (max-width: 475px){
-  .contact-box{
-   height: max-content;
-   margin-top: auto; 
+@media (max-width: 1440px){
+  .contact-right{
+    position: relative;
+    bottom: -3%;
+  }
+  img{
+    top: 93%;
+  }
 }
-.contact-right{
-      margin-left: 10%;
-      margin-top: 5%;
-      width: 280px;
-      height: 500px;
-    }
-    img{
-      margin-left: -33%;
-      margin-top: -60%;
-    }
-    .input-group{
-      margin-left: 20%;
-    }
-    textarea{
-      margin-left: 10%;
-    }
-    button{
-      margin-left: 20%;
-    }
+@media(max-width: 1024px){
+  .contact-right{
+    position: relative;
+    bottom: 14.9%;
+  }
+  img{
+    top: 105%;
+    left: 47.6%;
+  }
   .contact{
-    height: 220vh;
+    margin-left: -10%;
+  }
 }
+@media(max-width: 1024px){
+  
 }
 </style>

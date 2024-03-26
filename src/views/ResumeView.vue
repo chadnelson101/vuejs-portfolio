@@ -55,12 +55,12 @@
         <div class="chad2">
           <div class="skills-section">
         <div class="skills-head">
-            <h2>{{ Resume.heading5 }} {{ Resume.subheading3 }}</h2>
+            <h2>SKILLS</h2>
         </div>
 
         <div class="skills-main">
           <div class="skills">
-            <p>{{ Resume.p }}</p>
+            <p>HTML</p>
             <img src="https://i.ibb.co/SdKH0ZQ/html5-logo-2-removebg-preview.png" alt="">  
           </div>
           <div class="skills">
@@ -229,8 +229,7 @@ export default {
     color: #fff;
   }
 .edu-heading h1{
-  color: #008bf8;
-  text-decoration: underline;
+  color: black;
   margin-top: 5%;
   
 }
@@ -262,8 +261,7 @@ export default {
 .skills-head H2{
     font-size: 30px;
     margin-bottom: -5px;
-    color: #008bf8;
-  text-decoration: underline;
+    color:black;
 }
 .skills-main{
     width: 100%;

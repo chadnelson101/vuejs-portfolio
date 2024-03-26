@@ -83,7 +83,6 @@ img::after {
   display: flex;
   justify-content: space-between;
   height: auto;
-
 }
 .abt-left img{
   height: auto;
