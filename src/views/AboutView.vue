@@ -122,7 +122,7 @@ img::after {
   margin: 0 35px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1024px) {
   body{
     width: 100%;
     height: 100vh;

@@ -130,7 +130,8 @@ h1{
     height: 441px;
     background:black;
     color: #fff;
-    margin-top: -39.1%;
+    position: absolute;
+    top: 226px;
     margin-left: 65%;
 }
 h1{
@@ -197,60 +198,17 @@ tr td{
     padding-top: 30px;
   }
 img{
-  position: absolute;;
+  position: relative;
   width: 300px;
   height: 200px;
-  margin-left: 18%;
-  margin-top: -15%;
+  left: 27.4%;
+  top: -213px;
 }
-@media (max-width: 750px){
-    .contact-right{
-      margin-left: 10%;
-      margin-top: 5%;
-      width: 505px;
-      height: 420px;
-    }
-    img{
-      margin-left: 10%;
-      margin-top: -50%;
-      width: 200px;
-    }
-    .input-group{
-      margin-left: 20%;
-    }
-    textarea{
-      margin-left: 10%;
-    }
-    button{
-      margin-left: 20%;
-    }
-  .contact{
-  height: 220vh;
-}
-}
-@media (max-width: 1440px){
-  .contact-right{
-    position: relative;
-    bottom: -3%;
-  }
+@media (width: 1000px){
   img{
-    top: 93%;
+    position:relative;
+    left: 1000%;
+
   }
-}
-@media(max-width: 1024px){
-  .contact-right{
-    position: relative;
-    bottom: 14.9%;
-  }
-  img{
-    top: 105%;
-    left: 47.6%;
-  }
-  .contact{
-    margin-left: -10%;
-  }
-}
-@media(max-width: 1024px){
-  
 }
 </style>
