@@ -1,14 +1,14 @@
 <template>
-  <div v-for="Portfolio in Portfolio" :key="Portfolio">
+  <div class="body" v-for="Portfolio in Portfolio" :key="Portfolio">
     <div id="home">
-      <h2 class="head">{{ Portfolio.title}}</h2>
-      <h3 class="head1">{{ Portfolio.name }}</h3>
-      <h4 class="head2">{{ Portfolio.is }}</h4>
-      <img class="img" :src="Portfolio.image" >
+      <h2 class="head" id="head">{{ Portfolio.title}}</h2>
+      <h3 class="head1" id="head1">{{ Portfolio.name }}</h3>
+      <h4 class="head2" id="head2">{{ Portfolio.is }}</h4>
+      <img class="img" id="img" :src="Portfolio.image" >
     </div>
   </div>
   <div id="btn">
-    <a href="https://drive.google.com/file/d/15Y7dzuXFWqXgUVhp9B3UYvy1eziFW8TD/view?usp=sharing" target="_blank"><button class="btn">Download CV</button></a>
+    <a href="https://drive.google.com/file/d/15Y7dzuXFWqXgUVhp9B3UYvy1eziFW8TD/view?usp=sharing" target="_blank"><button class="btn" id="but">Download CV</button></a>
   </div>
   <svg class="svg-snowscene" xmlns="http://www.w3.org/2000/svg">
   <circle />
@@ -127,7 +127,6 @@ circle {
   animation-timing-function: ease-out;
 }
 
-/* Target specific circles with nth-child */
 circle:nth-child(2n) {
   animation-delay: 1.5s;
 }
@@ -158,23 +157,24 @@ circle:nth-child(5n) {
   font-size: 70px;
   color: #fff;
   margin-left: -63%;
+  animation-name: animate__bounceInLeft;
+  animation-duration: 2s;
 }
 
 .head1 {
   font-size: 70px;
   color: #fff;
   margin-left: -60%;
+  animation-name: animate__bounceInLeft;
+  animation-duration: 3s;
 }
 
 .head2 {
   font-size: 60px;
   color: #fff;
   margin-left: -35%;
-}
-.head{
-    animation-name: animate__bounceInLeft;
-    animation-duration: 2s;
-    
+  animation-name: animate__bounceInLeft;
+  animation-duration: 4s;
 }
 @keyframes animate__bounceInLeft{
     0% {
@@ -182,22 +182,13 @@ circle:nth-child(5n) {
         -webkit-transform: translateX(-2000px);
        }
 }
-.head1{
-    animation-name: animate__bounceInLeft;
-    animation-duration: 3s;
-    
-}
 @keyframes animate__bounceInLeft{
     0% {
         opacity: 0;
         -webkit-transform: translateX(-2000px);
        }
 }
-.head2{
-    animation-name: animate__bounceInLeft;
-    animation-duration: 4s;
-    
-}
+
 @keyframes animate__bounceInLeft{
     0% {
         opacity: 0;
@@ -270,34 +261,239 @@ circle:nth-child(5n) {
   transform: rotateX(30deg) rotateZ(0);
 }
 
-@media (max-width: 751px) {
-  .head {
-    font-size: 30px;
-    margin-left: 10%;
-    margin-top: 20%;
+@media (min-width: 1200px) and (max-width: 1300px){
+  .body{
+    height: 85vh;
   }
-
-  .head1 {
-    font-size: 30px;
-    margin-left: 8%;
-    margin-top: 18%;
+  #btn{
+    margin-top: 10%;
   }
-
-  .head2 {
-    font-size: 30px;
-    margin-left: 10%;
-    margin-top: 20%;
+  #head{
+    font-size: 50px;
   }
+  #head1{
+    font-size: 50px;
+  }
+  #head2{
+    font-size: 50px;
+  }
+#img{
+  position: relative;
+  margin-top: -30%;
+  width: 350px;
+  left: -5%;
+}
+}
 
-  .img {
+@media (min-width: 1000px) and (max-width:1200px){
+  #head{
+    font-size: 40px;
+  }
+  #head1{
+    font-size: 40px;
+  }
+  #head2{
+    font-size: 40px;
+  }
+  #img{
+    margin-top: -25%;
     width: 300px;
-    margin-left: -30%;
-    margin-top: 20%;
-    position: absolute;
   }
-  .btn{
-    margin-left: 7%;
-    margin-top: 30%;
+  .body{
+    width: 100%;
+    height: 70vh;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1000px){
+  #head{
+    font-size: 40px;
+    position: relative;
+    left: -3%;
+  }
+  #head1{
+    font-size: 40px;
+    position: relative;
+    left: -3%;
+  }
+  #head2{
+    font-size: 40px;
+    left: 10%;
+  }
+  #img{
+    margin-top: -100%;
+    width: 300px;
+  }
+  .body{
+    height: 60vh;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 900px){
+  #head{
+    font-size: 35px;
+    position: relative;
+    left: -3%;
+  }
+  #head1{
+    font-size: 35px;
+    position: relative;
+    left: -3%;
+  }
+  #head2{
+    font-size: 35px;
+    left: 10%;
+  }
+  #img{
+    margin-top: -30%;
+    width: 300px;
+  }
+  .body{
+    height: 60vh;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 800px){
+  #head{
+    font-size: 30px;
+    position: relative;
+    left: -3%;
+  }
+  #head1{
+    font-size: 30px;
+    position: relative;
+    left: -3%;
+  }
+  #head2{
+    font-size: 30px;
+    left: 10%;
+  }
+  #img{
+    margin-top: -25%;
+    width: 300px;
+  }
+  .body{
+    height: 60vh;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px){
+  #head{
+    font-size: 25px;
+    position: relative;
+    left: -3%;
+  }
+  #head1{
+    font-size: 25px;
+    position: relative;
+    left: -3%;
+  }
+  #head2{
+    font-size: 25px;
+    left: 50%;
+  }
+  #img{
+    margin-top: -20%;
+    width: 240px;
+  }
+  .body{
+    height: 60vh;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px){
+  #head{
+    font-size: 23px;
+    position: relative;
+    left: -3%;
+    top: 47px;
+  }
+  #head1{
+    font-size: 23px;
+    position: relative;
+    left: -3%;
+    top: 70px;
+  }
+  #head2{
+    font-size: 23px;
+    position: relative;
+    top: 95px;
+  }
+  #img{
+    width: 203px;
+    position: relative;
+    top: 29px;
+    left: -80px;
+  }
+  .body{
+    height: 60vh;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 500px){
+  #head{
+    font-size: 18px;
+    position: relative;
+    margin-left: -4%;
+    top: 167px;
+  }
+  #head1{
+    font-size: 18px;
+    position: relative;
+    margin-left: -3%;
+    top: 189px;
+  }
+  #head2{
+    font-size: 18px;
+    position: relative;
+    top: 201px;
+    margin-left: 4px;
+  }
+  #img{
+    width: 152px;
+    position: relative;
+    top: 0px;
+    left: -118px;
+  }
+  #but{
+    margin-left: -1%;
+  }
+  .body{
+    height: 60vh;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px){
+  #head{
+    font-size: 14px;
+    position: relative;
+    top: 195px;
+    margin-left: -10px;
+  }
+  #head1{
+    font-size: 14px;
+    position: relative;
+    top: 213px;
+    margin-left: -11px;
+  }
+  #head2{
+    font-size: 14px;
+    position: relative;
+    top: 228px;
+    margin-left: -6px;
+  }
+  #img{
+    position: relative;
+    width: 123px;
+    top: 38px;
+    left: -88px;
+  }
+  .body{
+    height: 60vh;
+  }
+  #but{
+    margin-left: -1%;
+    font-size: 16px;
   }
 }
 </style>

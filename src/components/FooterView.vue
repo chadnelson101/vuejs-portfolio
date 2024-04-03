@@ -75,6 +75,21 @@
   font-weight: 400;
   margin: 0px 5px;
 } 
-@media (max-width: 700px){
+@media (min-width: 300px) and (max-width: 400px){
+  footer{
+    background-color: #111;
+    width: 100%;
+  }
+  .footerbottom p {
+    color: white;
+    font-size: 12px;
+}
+.socialicons a {
+    text-decoration: none;
+    padding: 1px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
 }
   </style>

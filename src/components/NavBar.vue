@@ -1,5 +1,5 @@
 <template>
-  <nav class="navmenu">
+  <nav class="navmenu" id="navmenu">
     <ul>
       <router-link to="/" class="nav-link">Home</router-link>  
       <router-link to="/about" class="nav-link">About</router-link>  
@@ -40,10 +40,83 @@ export default {
   color: #0bb8f1e7; /* Change color on hover */
 }
 
-@media (max-width: 750px) {
-  .nav a {
-    font-size: 100px;
-    text-align: center;
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  #navmenu ul {
+    justify-content: center;
+    gap: 80px;
   }
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+  .navmenu{
+    font-size: 15px;
+  }
+  #navmenu ul {
+  justify-content: center;
+  gap: 70px;
+}
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+  .navmenu{
+    font-size: 15px;
+  }
+  #navmenu ul {
+  justify-content: center;
+  gap: 60px;
+}
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+  .navmenu{
+    font-size: 14px;
+  }
+  #navmenu ul {
+  justify-content: center;
+  gap: 50px;
+}
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .navmenu{
+    font-size: 14px;
+  }
+  #navmenu ul {
+  justify-content: center;
+  gap: 40px;
+}
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  .navmenu{
+    font-size: 14px;
+  }
+  #navmenu ul {
+  justify-content: center;
+  gap: 20px;
+}
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+  .navmenu{
+    font-size: 10px;
+  }
+  #navmenu ul {
+  justify-content: center;
+  gap: 20px;
+}
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .navmenu{
+    font-size: 8px;
+    height: 0px;
+  }
+  #navmenu ul {
+  justify-content: center;
+  gap: 14px;
+  margin-left: -33px;
+}
 }
 </style>
