@@ -9,20 +9,20 @@
               <div class="my-edu">
               <H2>{{ Resume.heading }}</H2>
               <h3>{{ Resume.heading1 }}</h3>
-              <p>{{ Resume.primaryschool }}</p>
+              <p>.{{ Resume.primaryschool }}</p>
               <span class="sp-box">{{ Resume.year }}</span>
             </div>
             
             <div class="my-edu">
             <h3>{{ Resume.heading2 }}</h3>
-            <p>{{ Resume.Highschool}}</p>
+            <p class="para">.{{ Resume.Highschool}}</p>
             <span class="sp-box">{{ Resume.year1 }}</span>
             </div>
               </div>
             </div>
 
             <div class="chad1">
-              <div class="edu-row">
+              <div class="edu-rows">
               <div class="row-2">
 
             <div class="exp">
@@ -54,7 +54,7 @@
 
         <div class="chad2">
           <div class="skills-section">
-        <div class="skills-head">
+        <div class="skills-head" id="h2">
             <h2>SKILLS</h2>
         </div>
 
@@ -157,7 +157,7 @@ export default {
   }
   #education .edu-row .my-edu{
     padding: 0 20px 0 20px;
-    border-left: 2px solid aqua;
+    border-left: 4px solid black;
     position: relative;
   }
   #education .edu-row .my-edu::before{
@@ -173,7 +173,7 @@ export default {
   
   #education .edu-row .exp{
     padding: 0 20px 0 20px;
-    border-left: 2px solid aqua;
+    border-left: 4px solid black;
     position: relative;
   }
   #education .edu-row .exp::before{
@@ -216,6 +216,97 @@ export default {
     color: #fff;
   }
   #education .edu-row .exp h3{
+    margin: 20px 0;
+    color: #fff;
+  }
+  #education .edu-rows{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 35px;
+    margin-left: 20px;
+  }
+  #education .edu-rows .my-exp{
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 35px;
+  }
+  #education .edu-row-1 .exp .my-edu{
+    flex-basis: 50%;
+  }
+  #education .edu-rows  h2{
+    font-weight: 600;
+    font-size: 25px;
+    margin: 15px 0;
+    color: #fff;
+    text-decoration: underline;
+  }
+  #education .edu-rows h3{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  #education .edu-rows .my-edu{
+    padding: 0 20px 0 20px;
+    border-left: 4px solid black;
+    position: relative;
+  }
+  #education .edu-rows .my-edu::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  
+  #education .edu-rows .exp{
+    padding: 0 20px 0 20px;
+    border-left: 4px solid black;
+    position: relative;
+  }
+  #education .edu-rows .exp::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  #education .edu-rows .sp-box{
+    padding: 4px 22px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: 400;
+    margin: 15px 0;
+    display: inline-block;
+  }
+  #education .edu-rows p{
+    font-size: 20px;
+  }
+  #education .edu-rows .exp{
+    padding: 0 20px  10px;
+    position: relative;
+  }
+  #education .edu-rows .exp ul li{
+    margin: 30px 0;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  #education .edu-rows .my-edu{
+    margin: 20px 0;
+  }
+  #education .edu-rows .my-edu h3{
+    margin: 20px;
+    color: #fff;
+  }
+  #education .edu-rows .exp h3{
     margin: 20px 0;
     color: #fff;
   }
@@ -287,8 +378,6 @@ export default {
 @media (max-width: 751px) {
   #education {
     padding: 70px 30px;
-    /* width: 100%;
-    height: 100vh; */
     margin-left: 0%;
   }
   .education h1{
@@ -322,29 +411,234 @@ export default {
     border-radius: 90px;
     width: 250px;
 }
-@media (max-width: 475px) {
-  #education {
-    padding: 70px 30px;
-    margin-left: 0%;
-  }
-  .education h1{
-    position: absolute;
-    margin-top: -10px;
-  }
-.skills-section{
-    width: 100%;
-    height: 100vh;
-    padding: 0px 13%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 120%;
+
+@media (min-width: 1000px) and (max-width:1200px){
+  .skills-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
-.chad{
-   flex-direction: column;
+
+.skills {
+  text-align: center;
+}
+
+.skills p {
+  font-weight: bold;
+}
+
+}
+
+@media (min-width: 751px) and (max-width: 1000px){
+  .skills-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skills {
+  text-align: center;
+}
+
+.skills p {
+  font-weight: bold;
+}
+
+}
+
+@media (max-width: 700px) {
+  .skills-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.edu-row h2{
+  position: relative;
+  left: 47px;
+}
+.skills{
+  width: 216px;
+    position: relative;
+    left: 16px;
+}
+ .edu-row h3 {
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    left: 49px;
+}
+.para{
+  position: relative;
+  left: 49px;
+}
+.edu-row .sp-box {
+    padding: 4px 22px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: 400;
+    margin: 15px 0;
+    display: inline-block;
+    position: relative;
+    left: 45px;
+}
+.edu-row p {
+    font-size: 20px;
+    position: relative;
+    left: 53px;
+}
+.edu-row{
   justify-content: center;
-  gap: 90px;
-  }
 }
+}
+
+@media (max-width: 600px){
+  .skills-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  position: relative;
+    left: -23px;
+}
+.skills {
+    border: 2px solid #fff;
+    border-radius: 90px;
+    width: 231px;
+}
+.skills-section{
+  
+}
+.edu-row h2{
+  position: relative;
+  left: 16px;
+}
+ .edu-row h3 {
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    left: 16px;
+}
+.edu-row .sp-box {
+    padding: 4px 22px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: 400;
+    margin: 15px 0;
+    display: inline-block;
+    position: relative;
+    left: 17px;
+}
+.edu-row p {
+    font-size: 20px;
+    position: relative;
+    left: 53px;
+}
+}
+
+@media (max-width: 500px) {
+  .skills-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    position: relative;
+    left: 26px;
+}
+.skills{
+  text-align: center;
+    position: relative;
+    width: 182px;
+    top: 28px;
+}
+.edu-rows h2 {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 15px 0;
+    color: #fff;
+    text-decoration: underline;
+    position: relative;
+    left: 44px;
+}
+.edu-rows .exp h3 {
+    margin: 20px 0;
+    color: #fff;
+    position: relative;
+    left: 38px;
+}
+.edu-rows p {
+    font-size: 20px;
+    position: relative;
+    left: 38px;
+}
+.edu-row .sp-box {
+    padding: 4px 22px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: 400;
+    margin: 15px 0;
+    display: inline-block;
+    position: relative;
+    left: 36px;
+}
+.edu-row h2 {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 15px 0;
+    color: #fff;
+    text-decoration: underline;
+    position: relative;
+    left: 38px;
+}
+.edu-row p {
+    font-size: 10px;
+    position: relative;
+    left: 27px;
+}
+.edu-rows .sp-box {
+    padding: 4px 22px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: 400;
+    margin: 15px 0;
+    display: inline-block;
+    position: relative;
+    left: 40px;
+}
+.edu-rows .exp ul li {
+    margin: 30px 0;
+    margin-left: 20px;
+    font-size: 19px;
+    font-weight: 500;
+    position: relative;
+    left: 16px;
+}
+.edu-row .my-edu h3 {
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    left: 37px;
+}
+.edu-heading h1 {
+    color: black;
+    margin-top: 5%;
+    position: relative;
+    left: 51px;
+}
+.skills p {
+  font-weight: bold;
+}
+.skills-head h2{
+    position: relative;
+    top: 129px;
+    left: 56px;
+}
+.skills-head h2 {
+    position: relative;
+    top: 91px;
+    left: 45px;
+}
+}
+
 </style>

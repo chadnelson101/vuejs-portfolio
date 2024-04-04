@@ -116,7 +116,7 @@ export default {
   height: 100%;
 }
 #home{
-  min-height: 100vh;
+  min-height: 65vh;
   position: relative;
 }
 circle {
@@ -230,7 +230,7 @@ circle:nth-child(5n) {
   transform: rotateX(70deg) rotateZ(30deg);
   transform-style: preserve-3d;
   transition: transform 0.5s;
-  margin-left: -50%;
+  margin-left: -4%;
 }
 
 .btn::before {
@@ -310,15 +310,20 @@ circle:nth-child(5n) {
     font-size: 40px;
     position: relative;
     left: -3%;
+    top: 32px;
+
   }
   #head1{
     font-size: 40px;
     position: relative;
     left: -3%;
+    top: 39px;
   }
   #head2{
     font-size: 40px;
-    left: 10%;
+    left: -2%;
+    position: relative;
+    top: 30px;
   }
   #img{
     margin-top: -100%;
@@ -334,19 +339,25 @@ circle:nth-child(5n) {
     font-size: 35px;
     position: relative;
     left: -3%;
+    top: 36px;
   }
   #head1{
     font-size: 35px;
     position: relative;
     left: -3%;
+    top: 49px;
+
   }
   #head2{
     font-size: 35px;
-    left: 10%;
+    left: -3%;
+    position: relative;
+    top: 54px;
   }
   #img{
-    margin-top: -30%;
     width: 300px;
+    position: relative;
+    top: 35px;
   }
   .body{
     height: 60vh;
@@ -358,15 +369,19 @@ circle:nth-child(5n) {
     font-size: 30px;
     position: relative;
     left: -3%;
+    top: 23px;
   }
   #head1{
     font-size: 30px;
     position: relative;
     left: -3%;
+    top: 40px;
   }
   #head2{
     font-size: 30px;
-    left: 10%;
+    left: -3%;
+    position: relative;
+    top: 60px;
   }
   #img{
     margin-top: -25%;
@@ -379,22 +394,28 @@ circle:nth-child(5n) {
 
 @media (min-width: 600px) and (max-width: 700px){
   #head{
-    font-size: 25px;
+    font-size: 27px;
     position: relative;
-    left: -3%;
+    left: -4%;
+    top: 45px;
   }
   #head1{
-    font-size: 25px;
+    font-size: 27px;
     position: relative;
-    left: -3%;
+    left: -5%;
+    top: 77px;
   }
   #head2{
-    font-size: 25px;
-    left: 50%;
+    font-size: 27px;
+    left: -4%;
+    position: relative;
+    top: 116px;
   }
   #img{
-    margin-top: -20%;
-    width: 240px;
+    width: 278px;
+    position: relative;
+    left: -82px;
+    top: -11px;
   }
   .body{
     height: 60vh;
@@ -403,57 +424,59 @@ circle:nth-child(5n) {
 
 @media (min-width: 500px) and (max-width: 600px){
   #head{
-    font-size: 23px;
+    font-size: 25px;
     position: relative;
     left: -3%;
-    top: 47px;
+    top: 55px;
   }
   #head1{
-    font-size: 23px;
+    font-size: 25px;
     position: relative;
     left: -3%;
-    top: 70px;
+    top: 87px;
   }
   #head2{
-    font-size: 23px;
+    font-size: 25px;
     position: relative;
-    top: 95px;
+    top: 114px;
+    left: -9px;
   }
   #img{
-    width: 203px;
     position: relative;
-    top: 29px;
-    left: -80px;
+    width: 240px;
+    left: -64px;
+    top: 52px;
+
   }
   .body{
     height: 60vh;
   }
 }
 
-@media (min-width: 400px) and (max-width: 500px){
+@media (max-width: 500px){
   #head{
-    font-size: 18px;
+    font-size: 21px;
     position: relative;
-    margin-left: -4%;
-    top: 167px;
+    margin-left: 4%;
+    top: 218px;
   }
   #head1{
-    font-size: 18px;
+    font-size: 21px;
     position: relative;
-    margin-left: -3%;
-    top: 189px;
+    margin-left: 4%;
+    top: 218px;
   }
   #head2{
-    font-size: 18px;
+    font-size: 21px;
     position: relative;
-    top: 201px;
+    top: 215px;
     margin-left: 4px;
   }
   #img{
-    width: 152px;
+    width: 171px;
     position: relative;
-    top: 0px;
-    left: -118px;
+    top: 18px;
+    left: -151px;
   }
   #but{
     margin-left: -1%;
@@ -463,7 +486,7 @@ circle:nth-child(5n) {
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px){
+@media (max-width: 400px){
   #head{
     font-size: 14px;
     position: relative;
@@ -486,7 +509,41 @@ circle:nth-child(5n) {
     position: relative;
     width: 123px;
     top: 38px;
-    left: -88px;
+    left: -118px;
+  }
+  .body{
+    height: 60vh;
+  }
+  #but{
+    margin-left: -1%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 300px){
+  #head{
+    font-size: 14px;
+    position: relative;
+    top: 195px;
+    margin-left: -10px;
+  }
+  #head1{
+    font-size: 14px;
+    position: relative;
+    top: 213px;
+    margin-left: -11px;
+  }
+  #head2{
+    font-size: 14px;
+    position: relative;
+    top: 228px;
+    margin-left: -6px;
+  }
+  #img{
+    position: relative;
+    width: 123px;
+    top: 38px;
+    left: -97px;
   }
   .body{
     height: 60vh;

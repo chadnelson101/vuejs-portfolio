@@ -33,11 +33,11 @@ export default {
   font-weight: bold;
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease; /* Add transition effect */
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #0bb8f1e7; /* Change color on hover */
+  color: #0bb8f1e7;
 }
 
 
@@ -51,6 +51,7 @@ export default {
 @media (min-width: 900px) and (max-width: 1000px) {
   .navmenu{
     font-size: 15px;
+    height: 29px;
   }
   #navmenu ul {
   justify-content: center;
@@ -61,6 +62,7 @@ export default {
 @media (min-width: 800px) and (max-width: 900px) {
   .navmenu{
     font-size: 15px;
+    height: 29px;
   }
   #navmenu ul {
   justify-content: center;
@@ -71,6 +73,7 @@ export default {
 @media (min-width: 700px) and (max-width: 800px) {
   .navmenu{
     font-size: 14px;
+    height: 29px;
   }
   #navmenu ul {
   justify-content: center;
@@ -81,6 +84,7 @@ export default {
 @media (min-width: 600px) and (max-width: 700px) {
   .navmenu{
     font-size: 14px;
+    height: 29px;
   }
   #navmenu ul {
   justify-content: center;
@@ -91,16 +95,20 @@ export default {
 @media (min-width: 500px) and (max-width: 600px) {
   .navmenu{
     font-size: 14px;
+    margin-left: -29px;
+    height: 29px;
   }
   #navmenu ul {
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
 }
 }
 
-@media (min-width: 400px) and (max-width: 500px) {
+@media(max-width: 500px) {
   .navmenu{
     font-size: 10px;
+    height: 29px;
+    width: 121%;
   }
   #navmenu ul {
   justify-content: center;
@@ -108,14 +116,29 @@ export default {
 }
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (max-width: 400px) {
+  .navmenu{
+    font-size: 9px;
+    height: 0px;
+    width: 135%;
+
+  }
+  #navmenu ul {
+  justify-content: center;
+  gap: 24px;
+  margin-left: -33px;
+}
+}
+
+@media (max-width: 300px) {
   .navmenu{
     font-size: 8px;
     height: 0px;
-  }
+    width: 100%;
+}
   #navmenu ul {
   justify-content: center;
-  gap: 14px;
+  gap: 19px;
   margin-left: -33px;
 }
 }

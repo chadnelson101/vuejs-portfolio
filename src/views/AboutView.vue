@@ -1,10 +1,10 @@
 <template>
-  <div v-for="About in About" :key="About">
+  <div class="main" v-for="About in About" :key="About">
   <section id="about">
-    <div class="abt-left">
+    <div class="abt-left" id="abt-left">
       <img :src="About.image">
     </div>
- <div class="about">
+ <div class="about" id="abt">
   <h1>{{ About.heading }}</h1>
   <p>{{ About.info }}</p>
  </div>
@@ -88,6 +88,7 @@ img::after {
   height: auto;
   transform: translateY(5opx);
   width: 420px;
+  border-radius: 33px;
 }
 .about{
   width: 54%;
@@ -97,10 +98,9 @@ img::after {
   align-items: center;
 }
 .about h1{
-  color: #008bf8;
+  color: black;
   font-size: 37px;
   margin-top: 1%;
-  text-decoration: underline;
 }
 .about p{
   color: #fff;
@@ -122,53 +122,199 @@ img::after {
   margin: 0 35px;
 }
 
-@media (max-width: 1024px) {
-  body{
-    width: 100%;
-    height: 100vh;
+@media (min-width: 900px) and (max-width: 1000px){
+#abt-left{
+  position: relative;
+  top: 50px;
+  left: -46px;
+}
+#abt p{
+    font-size: 16px;
+    font-weight: bold;
+}
+}
+
+@media (min-width: 800px) and (max-width: 900px){
+  #abt-left{
+    position: relative;
+    top: 40px;
+    left: -46px;
   }
-  .abt-left img{
-    margin-top: -500px;
-    position: absolute;
-    margin-left: 20%;
-    width: 350px;
-  }
-  .about{
-    margin-left: -95%; 
-    margin-top: 20%;
-  }
-  #about p{
-    font-size: 20px;
-    margin-left: -65%;
-  }
-  #about h1{
-    margin-top: 130%;
-    margin-left: -55%;
+  #abt p{
+      font-size: 13px;
+      font-weight: bold;
   }
 }
-@media (max-width: 470px) {
-  body{
-    width: 100%;
-    height: 100vh;
+
+@media (min-width: 700px) and (max-width: 800px){
+  #abt-left{
+    position: relative;
+    top: 40px;
+    left: -46px;
   }
-  #about img{
-    position: absolute;
-    margin-top: -100% ;
-    margin-left: 100%;
-    width: 250px;
+  #abt-left img{
+    width: 380px;
   }
-  .about{
-    margin-left: -95%; 
-    margin-top: -50%;
+  #abt p{
+      font-size: 10px;
+      font-weight: bold;
   }
-  #about p{
-    font-size: 20px;
-    margin-left: -75%;
-    width: 300px;
+}
+
+@media (min-width: 600px) and (max-width: 700px){
+  #abt-left{
+    position: relative;
+    top: 40px;
+    left: -46px;
   }
-  #about h1{
-    margin-top: 130%;
-    margin-left: -76%;
+  #abt-left img{
+    width: 380px;
+    position: relative;
+    top: -44px;
+    left: 119px;
+  }
+  #abt p{
+    font-size: 13px;
+    padding: 4px;
+    width: 326%;
+    position: relative;
+    left: -371px;
+    top: 309px;
+  }
+  #abt h1{
+    font-size: 30px;
+    position: relative;
+    left: -194px;
+    top: -110px;
+  }
+  .main{
+    height: 120vh;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px){
+  #abt-left{
+    position: relative;
+    top: 40px;
+    left: -46px;
+  }
+  #abt-left img{
+    width: 315px;
+    position: relative;
+    top: -44px;
+    left: 116px;
+  }
+  #abt p{
+    font-size: 12px;
+    padding: 1px;
+    width: 384%;
+    position: relative;
+    left: -356px;
+    top: 309px;
+  }
+  #abt h1{
+    font-size: 26px;
+    position: relative;
+    left: -154px;
+    top: -93px;
+  }
+  .main{
+    height: 120vh;
+  }
+}
+
+@media (width: 500px){
+  #abt-left{
+    position: relative;
+    top: 40px;
+    left: -46px;
+  }
+  #abt-left img{
+    width: 315px;
+    position: relative;
+    top: -44px;
+    left: 75px;
+  }
+  #abt p{
+    font-size: 12px;
+    padding: 1px;
+    width: 332%;
+    position: relative;
+    left: -313px;
+    top: 309px;
+  }
+  #abt h1{
+    font-size: 22px;
+    position: relative;
+    left: -186px;
+    top: -49px;
+    font-weight: bold;
+  }
+  .main{
+    height: 120vh;
+  }
+}
+
+@media (max-width: 400px){
+  #abt-left{
+    position: relative;
+    top: 40px;
+    left: -46px;
+  }
+  #abt-left img{
+    width: 248px;
+    position: relative;
+    top: -73px;
+    left: 69px;
+  }
+  #abt p{
+    font-size: 12px;
+    padding: 1px;
+    width: 332%;
+    position: relative;
+    left: -286px;
+    top: 285px;
+  }
+  #abt h1{
+    font-size: 22px;
+    position: relative;
+    left: -156px;
+    top: -49px;
+    font-weight: bold;
+  }
+  .main{
+    height: 120vh;
+  }
+}
+
+@media (width: 300px){
+  #abt-left{
+    position: relative;
+    top: 40px;
+    left: -46px;
+  }
+  #abt-left img{
+    width: 155px;
+    position: relative;
+    top: -216px;
+    left: 74px;
+  }
+  #abt p{
+    font-size: 12px;
+    padding: 1px;
+    width: 221%;
+    position: relative;
+    left: -172px;
+    top: 159px;
+  }
+  #abt h1{
+    font-size: 22px;
+    position: relative;
+    left: -106px;
+    top: -49px;
+    font-weight: bold;
+  }
+  .main{
+    height: 130vh;
   }
 }
   </style>
