@@ -1,4 +1,5 @@
 <template>
+  <div class="body">
   <div  v-for="Resume in Resume" :key="Resume">
   <section class="edu-heading" id="education">
             <h1 class="sub-heading">{{ Resume.subheading }}</h1>
@@ -88,7 +89,7 @@
             </div>
           </div>
         </div>
-
+      </div>
 </template>
 
 <script>
@@ -505,9 +506,6 @@ export default {
     border-radius: 90px;
     width: 231px;
 }
-.skills-section{
-  
-}
 .edu-row h2{
   position: relative;
   left: 16px;
@@ -542,7 +540,7 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     position: relative;
-    left: 26px;
+    left: -15px;
 }
 .skills{
   text-align: center;
@@ -639,6 +637,50 @@ export default {
     top: 91px;
     left: 45px;
 }
+.body{
+  height: 280vh;
+}
+}
+@media (max-width: 400px){
+  .skills-main {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  position: relative;
+  left: 79px;
+  top: 377px;
+}
+.skills-head h2{
+  position: relative;
+    top: 457px;
+}
+.body{
+  height: 350vh;
+}
 }
 
+@media (max-width: 300px){
+.skills-head h2 {
+    position: relative;
+    top: 734px;
+}
+.skills-main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    position: relative;
+    left: 47px;
+    top: 635px;
+}
+.edu-heading h1 {
+    color: black;
+    margin-top: 5%;
+    position: relative;
+    left: 40px;
+    font-size: 18px;
+}
+.body{
+  height: 390vh;
+}
+}
 </style>

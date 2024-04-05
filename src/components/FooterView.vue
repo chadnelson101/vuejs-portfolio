@@ -26,11 +26,9 @@
     margin: 0;
     padding: 0;
     height: 100vh;
-    width: 100%;
   }
   footer{
     background-color: #111;
-    width: 100%;
 }
 .footercontainer{
   width: 100%;
@@ -75,10 +73,37 @@
   font-weight: 400;
   margin: 0px 5px;
 } 
+
+/* @media (min-width: 1000px) and (max-width:1200px){
+  footer{
+    background-color: #111;
+    width: 103%;
+}
+}
+@media (min-width: 751px) and (max-width:1200px){
+  footer{
+    background-color: #111;
+    width: 104%;
+}
+}
+
+@media (min-width: 700px){
+  footer{
+    background-color: #111;
+    width: 140%;
+}
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  footer{
+    background-color: #111;
+    width: 121%;
+  }
+}
 @media (min-width: 300px) and (max-width: 400px){
   footer{
     background-color: #111;
-    width: 100%;
+    width: 121%;
   }
   .footerbottom p {
     color: white;
@@ -93,4 +118,52 @@
 }
 }
 
+@media (max-width: 400px){
+  footer{
+    background-color: #111;
+    width: 130%;
+  }
+}
+
+@media (max-width: 300px){
+  footer{
+    background-color: #111;
+    width: 135%;
+  }
+} */
+
+/* @media (min-width: 700px){
+  footer{
+    background-color: #111;
+    width: 107%;
+}
+} */
+
+/* @media (min-width: 500px) and (max-width: 600px) {
+  footer{
+    background-color: #111;
+    width: 108%;
+  }
+} */
+
+/* @media (min-width: 500px) and (max-width: 600px) {
+  footer{
+    background-color: #111;
+    width: 121%;
+  }
+} */
+
+/* @media (max-width: 300px){
+  footer{
+    background-color: #111;
+    width: 130%;
+  }
+} */
+
+/* @media (max-width: 400px){
+  footer{
+    background-color: #111;
+    width: 130%;
+  }
+} */
   </style>

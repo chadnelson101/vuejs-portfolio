@@ -204,11 +204,4 @@ img{
   left: 27.4%;
   top: -213px;
 }
-@media (width: 1000px){
-  img{
-    position:relative;
-    left: 1000%;
-
-  }
-}
 </style>

@@ -1,6 +1,5 @@
 <template>
 <div class="chad" v-for="Testimonial in Testimonials" :key="Testimonial">
-  <div class="name" >
   <div class="myCard">
         <div class="innerCard">
             <div class="frontSide">
@@ -41,9 +40,7 @@
           </div>
       </div>
   </div>
-  </div>  
 
-          <div class="name1">
             <div class="myCard">
         <div class="innerCard">
           <div class="frontSide">
@@ -84,8 +81,6 @@
         </div>
     </div>
     </div>
-      </div>
-
       </template>
 
 <script>
@@ -110,6 +105,18 @@ export default {
   </script>
 
 <style scoped>
+
+.chad{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.chad{
+    height: 135vh;
+    position: relative;
+    left: 41px;
+    top: 41px;
+}
 .name{
   display: flex;
   justify-content: center;
@@ -228,74 +235,56 @@ export default {
   margin-top: 5%;
 }
 }
-@media (max-width: 470px){
-  .name{
-  flex-direction: column;
-  margin-left: 19%;
-  gap: 90px;
-  margin-top: 5%;
+
+@media (min-width: 1000px) and (max-width:1200px){
+  .chad{
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    left: 178px;
+  }
+  .frontSide, .backSide{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 106%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    gap: 10px;
 }
-.name1{
-  flex-direction: column;
-  margin-left: 19%;
-  gap: 90px;
-  margin-top: 2%;
+}
+
+@media (width: 300px){
+  .chad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    margin-top: -16%;
+  }
+
+  .frontSide img {
+    width: auto;
+    height: 274px;
+    
+}
+.frontSide[data-v-c1cfdf9a], .backSide[data-v-c1cfdf9a] {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 84%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    margin-left: -5%;
 }
 }
 </style>
-
-  <!-- <div class="myCard">
-        <div class="innerCard">
-            <div class="frontSide">
-                <p class="title"></p>
-                <img :src="Testimonial.image3" alt="">
-                <p class="img-name">{{ Testimonial.jodie }}</p>
-              </div>
-            <div class="backSide">
-                <p class="title"></p>
-                <p>{{ Testimonial.para3 }}</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="name1">
-  <div class="myCard">
-        <div class="innerCard">
-          <div class="frontSide">
-                <p class="title"></p>
-                <img :src="Testimonial.image4" alt="">
-                <p class="img-name">{{ Testimonial.niyaaz }}</p>
-            </div>
-            <div class="backSide">
-                <p class="title"></p>
-                <p>{{ Testimonial.para4 }}</p>
-            </div>
-        </div>
-  <! <div class="myCard">
-    <div class="innerCard">
-            <div class="frontSide">
-                <p class="title"></p>
-                <img :src="Testimonial.image5" alt="">
-                <p class="img-name">{{ Testimonial.zubair }}</p>
-            </div>
-            <div class="backSide">
-                <p class="title"></p>
-                <p>{{ Testimonial.para5 }}</p>
-            </div>
-        </div>
-    </div>
-  <div class="myCard">
-        <div class="innerCard">
-            <div class="frontSide">
-                <p class="title"></p>
-                <img :src="Testimonial.image6" alt="">
-                <p class="img-name">{{ Testimonial.matthew }}</p>
-            </div>
-            <div class="backSide">
-                <p class="title"></p>
-                <p>{{ Testimonial.para6 }}</p>
-            </div>
-        </div>
-    </div>
-    </div> -->

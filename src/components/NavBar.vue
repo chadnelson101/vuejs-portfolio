@@ -28,6 +28,7 @@ export default {
   background: black;
   height: 100px;
   padding: 30px;
+  width: 98%;
 }
 .nav-link {
   font-weight: bold;
@@ -41,7 +42,7 @@ export default {
 }
 
 
-@media (min-width: 1000px) and (max-width: 1200px) {
+/* @media (min-width: 1000px) and (max-width: 1200px) {
   #navmenu ul {
     justify-content: center;
     gap: 80px;
@@ -70,14 +71,8 @@ export default {
 }
 }
 
-@media (min-width: 700px) and (max-width: 800px) {
-  .navmenu{
-    font-size: 14px;
-    height: 29px;
-  }
-  #navmenu ul {
-  justify-content: center;
-  gap: 50px;
+#navmenu ul{
+  gap: 64px;
 }
 }
 
@@ -92,11 +87,29 @@ export default {
 }
 }
 
-@media (min-width: 500px) and (max-width: 600px) {
+  @media (min-width: 700px) and (max-width: 800px) {
+    .navmenu{
+      font-size: 14px;
+      height: 29px;
+    }
+    #navmenu ul {
+    justify-content: center;
+    gap: 50px;
+  }
+  }
+  @media (min-width: 700px){
+    .navmenu[data-v-4295d220] {
+      font-size: 14px;
+      margin-left: -29px;
+      height: 29px;
+      width: 135%;
+  }
+@media (min-width: 500px) {
   .navmenu{
     font-size: 14px;
     margin-left: -29px;
     height: 29px;
+    width: 100%;
   }
   #navmenu ul {
   justify-content: center;
@@ -106,21 +119,20 @@ export default {
 
 @media(max-width: 500px) {
   .navmenu{
-    font-size: 10px;
+    font-size: 12px;
     height: 29px;
-    width: 121%;
+    width: 115%;
   }
   #navmenu ul {
   justify-content: center;
-  gap: 20px;
+  gap: 39px;
 }
 }
 
 @media (max-width: 400px) {
   .navmenu{
-    font-size: 9px;
-    height: 0px;
-    width: 135%;
+    font-size: 11px;
+    height: 5px;
 
   }
   #navmenu ul {
@@ -132,14 +144,72 @@ export default {
 
 @media (max-width: 300px) {
   .navmenu{
-    font-size: 8px;
-    height: 0px;
+    font-size: 11px;
+    height: 4px;
+}
+  #navmenu ul {
+  justify-content: center;
+  gap: 19px;
+  margin-left: -33px;
+}
+} */
+
+/* @media (min-width: 700px) and (max-width: 800px) {
+    .navmenu{
+      font-size: 14px;
+      height: 29px;
+    }
+    #navmenu ul {
+      justify-content: center;
+      gap: 50px;
+    }
+  }
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .navmenu{
+    font-size: 14px;
+    height: 29px;
+  }
+  #navmenu ul {
+  justify-content: center;
+  gap: 40px;
+}
+} */
+
+/* @media(max-width: 500px) {
+  .navmenu{
+    font-size: 12px;
+    height: 29px;
+    width: 108%;
+  }
+  #navmenu ul {
+  justify-content: center;
+  gap: 39px;
+}
+} */
+
+/* @media (max-width: 300px) {
+  .navmenu{
+    font-size: 11px;
+    height: 4px;
     width: 100%;
 }
   #navmenu ul {
   justify-content: center;
   gap: 19px;
   margin-left: -33px;
+}
+} */
+
+@media (max-width: 300px) {
+  .navmenu{
+    font-size: 8px;
+    height: 4px;
+}
+  #navmenu ul {
+    justify-content: center;
+    gap: 19px;
+    margin-left: -93px;
 }
 }
 </style>
