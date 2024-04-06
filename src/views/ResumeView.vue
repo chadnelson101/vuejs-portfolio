@@ -540,7 +540,8 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     position: relative;
-    left: -15px;
+    left: -30px;
+    top: 68px;
 }
 .skills{
   text-align: center;
@@ -628,17 +629,13 @@ export default {
   font-weight: bold;
 }
 .skills-head h2{
-    position: relative;
-    top: 129px;
-    left: 56px;
-}
-.skills-head h2 {
-    position: relative;
-    top: 91px;
-    left: 45px;
+  position: relative;
+    top: 140px;
+    left: -4px;
+
 }
 .body{
-  height: 280vh;
+  height: 290vh;
 }
 }
 @media (max-width: 400px){
@@ -647,12 +644,80 @@ export default {
   grid-template-columns: repeat(1, 1fr);
   gap: 40px;
   position: relative;
-  left: 79px;
+  left: 46px;
   top: 377px;
 }
 .skills-head h2{
   position: relative;
     top: 457px;
+    left: 0px;
+}
+.edu-heading h1[data-v-3fa8412c] {
+    color: black;
+    margin-top: 5%;
+    position: relative;
+    left: 14px;
+}
+h2[data-v-3fa8412c] {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 15px 0;
+    color: #fff;
+    text-decoration: underline;
+    position: relative;
+    left: 2px;
+}
+.edu-row .my-edu h3[data-v-3fa8412c] {
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    left: 2px;
+}
+.edu-row p[data-v-3fa8412c] {
+    font-size: 20px;
+    position: relative;
+    left: 1px;
+}
+.edu-row .sp-box[data-v-3fa8412c] {
+    padding: 4px 22px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: 400;
+    margin: 15px 0;
+    display: inline-block;
+    position: relative;
+    left: 2px;
+}
+.edu-rows .exp h3[data-v-3fa8412c] {
+    margin: 20px 0;
+    color: #fff;
+    position: relative;
+    left: 2px;
+}
+.edu-rows p[data-v-3fa8412c] {
+    font-size: 20px;
+    position: relative;
+    left: 4px;
+}
+.edu-rows .sp-box[data-v-3fa8412c] {
+    padding: 4px 22px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: 400;
+    margin: 15px 0;
+    display: inline-block;
+    position: relative;
+    left: 2px;
+}
+.edu-rows .exp ul li[data-v-3fa8412c] {
+    margin: 30px 0;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    left: 2px;
 }
 .body{
   height: 350vh;
@@ -663,13 +728,14 @@ export default {
 .skills-head h2 {
     position: relative;
     top: 734px;
+    color: black;
 }
 .skills-main{
-    display: grid;
+  display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
     position: relative;
-    left: 47px;
+    left: 12px;
     top: 635px;
 }
 .edu-heading h1 {

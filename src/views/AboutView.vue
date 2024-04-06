@@ -245,7 +245,7 @@ img::after {
   #abt h1{
     font-size: 22px;
     position: relative;
-    left: -186px;
+    left: -183px;
     top: -49px;
     font-weight: bold;
   }
@@ -264,7 +264,7 @@ img::after {
     width: 248px;
     position: relative;
     top: -73px;
-    left: 69px;
+    left: 76px;
   }
   #abt p{
     font-size: 12px;
@@ -277,7 +277,7 @@ img::after {
   #abt h1{
     font-size: 22px;
     position: relative;
-    left: -156px;
+    left: -153px;
     top: -49px;
     font-weight: bold;
   }
@@ -296,20 +296,20 @@ img::after {
     width: 155px;
     position: relative;
     top: -216px;
-    left: 74px;
+    left: 82px;
   }
   #abt p{
     font-size: 12px;
     padding: 1px;
     width: 221%;
     position: relative;
-    left: -172px;
+    left: -167px;
     top: 159px;
   }
   #abt h1{
     font-size: 22px;
     position: relative;
-    left: -106px;
+    left: -98px;
     top: -49px;
     font-weight: bold;
   }

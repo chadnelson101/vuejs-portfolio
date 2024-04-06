@@ -3,7 +3,7 @@
     <ul>
       <router-link to="/" class="nav-link">Home</router-link>  
       <router-link to="/about" class="nav-link">About</router-link>  
-      <router-link to="/Resume" class="nav-link">Resume</router-link>  
+      <router-link to="/Resume" class="nav-link">Education</router-link>  
       <router-link to="/Projects" class="nav-link">Projects</router-link>  
       <router-link to="/testimonials" class="nav-link">Testimonial</router-link>  
       <router-link to="/contact" class="nav-link">Contact</router-link>
@@ -201,15 +201,146 @@ export default {
 }
 } */
 
-@media (max-width: 300px) {
-  .navmenu{
-    font-size: 8px;
-    height: 4px;
+@media (width: 900px){
+  .navmenu[data-v-4295d220] {
+  color: #fff;
+  background: black;
+  height: 20px;
+  padding: 30px;
+  width: 98%;
+  font-size: 14px;
 }
-  #navmenu ul {
+
+.navmenu ul[data-v-4295d220] {
+  display: flex;
     justify-content: center;
-    gap: 19px;
-    margin-left: -93px;
+    gap: 41px;
+    position: relative;
+    left: -46px;
+    top: -6px;
+}
+}
+
+
+@media (width: 800px){
+  .navmenu[data-v-4295d220] {
+  color: #fff;
+  background: black;
+  height: 20px;
+  padding: 30px;
+  width: 98%;
+  font-size: 14px;
+}
+
+.navmenu ul[data-v-4295d220] {
+  display: flex;
+    justify-content: center;
+    gap: 41px;
+    position: relative;
+    left: -46px;
+    top: -6px;
+}
+}
+
+@media (width: 700px) {
+  .navmenu[data-v-4295d220] {
+  color: #fff;
+  background: black;
+  height: 20px;
+  padding: 30px;
+  width: 98%;
+  font-size: 14px;
+}
+
+.navmenu ul[data-v-4295d220] {
+  display: flex;
+    justify-content: center;
+    gap: 41px;
+    position: relative;
+    left: -46px;
+    top: -6px;
+}
+}
+
+
+@media (max-width: 600px) {
+  .navmenu[data-v-4295d220] {
+  color: #fff;
+  background: black;
+  height: 20px;
+  padding: 30px;
+  width: 98%;
+  font-size: 13px;
+}
+
+.navmenu ul[data-v-4295d220] {
+  display: flex;
+    justify-content: center;
+    gap: 37px;
+    position: relative;
+    left: -46px;
+    top: -6px;
+}
+}
+
+
+@media (max-width: 500px) {
+  .navmenu[data-v-4295d220] {
+  color: #fff;
+  background: black;
+  height: 20px;
+  padding: 30px;
+  width: 98%;
+  font-size: 12px;
+}
+
+.navmenu ul[data-v-4295d220] {
+  display: flex;
+    justify-content: center;
+    gap: 28px;
+    position: relative;
+    left: -46px;
+    top: -4px;
+}
+}
+
+
+@media (width: 400px){
+  .navmenu[data-v-4295d220] {
+  color: #fff;
+  background: black;
+  height: 20px;
+  padding: 30px;
+  width: 98%;
+  font-size: 10px;
+}
+
+.navmenu ul[data-v-4295d220] {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  position: relative;
+  left: -46px;
+}
+}
+
+
+@media (max-width: 300px) {
+  .navmenu[data-v-4295d220] {
+  color: #fff;
+  background: black;
+  height: 20px;
+  padding: 30px;
+  width: 98%;
+  font-size: 9px;
+}
+
+.navmenu ul[data-v-4295d220] {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  position: relative;
+  left: -46px;
 }
 }
 </style>

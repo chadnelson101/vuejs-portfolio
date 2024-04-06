@@ -91,7 +91,10 @@ export default {
 
 <style scoped>
 .projects{
-  height: 130vh;
+  height: 100vh;
+}
+element.style {
+    gap: 53px;
 }
  h1{
   color:black;
@@ -99,7 +102,7 @@ export default {
 .grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: -10px;
+  gap: -20px;
   margin-top: 5%;
   margin-left: 10%;
 }
@@ -168,7 +171,17 @@ export default {
  opacity: 1;
 }
 
-@media (min-width: 1000px) and (max-width:1200px){
+@media (max-width: 500px){
+  .projects{
+    height: 190vh;
+  }
+  .grid[data-v-6375b3f9][data-v-6375b3f9][data-v-6375b3f9][data-v-6375b3f9] {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    left: 75px;
+    gap: 59px;
+}
   .chad[data-v-c1cfdf9a] {
     grid-template-columns: repeat(3, 1fr);
     position: relative;
@@ -232,12 +245,13 @@ export default {
   }
 }
 
-@media (min-width: 700px) {
-  .grid[data-v-6375b3f9] {
+@media (max-width: 900px){
+  .grid[data-v-6375b3f9][data-v-6375b3f9] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
-    left: 113px;
+    left: 0px;
+    gap: 27px;
 }
   .projects{
     height: 175vh;
@@ -246,9 +260,44 @@ export default {
     left: 146px;
     color: black;
     position: relative;
-    font-size: 50px;
+    font-size: 46px;
+    left: 16px;
 }
 }
+
+@media (min-width: 700px) {
+  .grid[data-v-6375b3f9][data-v-6375b3f9] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    left: 0px;
+    gap: 27px;
+}
+  .projects{
+    height: 175vh;
+  }
+  h1 {
+    left: 146px;
+    color: black;
+    position: relative;
+    font-size: 46px;
+    left: 16px;
+}
+}
+
+@media (max-width: 600px){
+  .projects{
+    height: 180vh;
+  }
+  .grid[data-v-6375b3f9] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    position: relative;
+    left: -22px;
+}
+}
+
 @media (max-width: 500px) {
   .grid {
     display: grid;
@@ -257,14 +306,14 @@ export default {
     margin-top: 5%;
     margin-left: 10%;
     position: relative;
-    left: 106px;
+    left: 74px;
 }
   .projects{
     height: 328vh;
   }
   h1{
     position: relative;
-    left: 32px;
+    left: 1px;
   }
 }
 
@@ -276,14 +325,26 @@ export default {
     margin-top: 5%;
     margin-left: 10%;
     position: relative;
-    left: 106px;
+    left: 35px;
 }
   .projects{
     height: 328vh;
   }
   h1 {
     position: relative;
-    left: 75px;
+    left: 2px;
+}
+h1[data-v-6375b3f9] {
+    position: relative;
+    left: 2px;
+    font-size: 32px;
+}
+.grid[data-v-6375b3f9][data-v-6375b3f9][data-v-6375b3f9][data-v-6375b3f9][data-v-6375b3f9] {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    left: 40px;
+    gap: 59px;
 }
 }
 
@@ -308,6 +369,19 @@ export default {
     color: black;
     position: relative;
     left: 6px;
+}
+h1[data-v-6375b3f9] {
+    color: black;
+    position: relative;
+    left: 6px;
+    font-size: 29px;
+}
+.grid[data-v-6375b3f9][data-v-6375b3f9][data-v-6375b3f9][data-v-6375b3f9][data-v-6375b3f9] {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    left: 103px;
+    gap: 59px;
 }
 }
 </style>

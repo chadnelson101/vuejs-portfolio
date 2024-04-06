@@ -5,11 +5,10 @@
             <div class="frontSide">
               <p class="title"></p>
               <img :src="Testimonial.image1" alt="">
-              <p class="img-name">{{ Testimonial.joel }}</p>
+              <p class="img-name">{{ Testimonial.para1 }}</p>
             </div>
             <div class="backSide">
                 <p class="title"></p>
-                <p>{{ Testimonial.para1 }}</p>
             </div>
        </div>
   </div>
@@ -18,11 +17,10 @@
             <div class="frontSide">
                 <p class="title"></p>
                 <img :src="Testimonial.image2" alt="">
-                <p class="img-name">{{ Testimonial.jodi }}</p>
+                <p class="img-name">{{ Testimonial.para2 }}</p>
             </div>
             <div class="backSide">
                 <p class="title"></p>
-                <p>{{ Testimonial.para2 }}</p>
               </div>
             </div>
           </div>
@@ -32,11 +30,10 @@
           <div class="frontSide">
               <p class="title"></p>
               <img :src="Testimonial.image3" alt="">
-              <p class="img-name">{{ Testimonial.jodie }}</p>
+              <p class="img-name">{{ Testimonial.para3 }}</p>
             </div>
           <div class="backSide">
               <p class="title"></p>
-              <p>{{ Testimonial.para3 }}</p>
           </div>
       </div>
   </div>
@@ -46,11 +43,10 @@
           <div class="frontSide">
                 <p class="title"></p>
                 <img :src="Testimonial.image4" alt="">
-                <p class="img-name">{{ Testimonial.niyaaz }}</p>
+                <p class="img-name">{{ Testimonial.para4 }}</p>
             </div>
             <div class="backSide">
                 <p class="title"></p>
-                <p>{{ Testimonial.para4 }}</p>
             </div>
         </div>
         </div>
@@ -59,11 +55,10 @@
             <div class="frontSide">
                 <p class="title"></p>
                 <img :src="Testimonial.image5" alt="">
-                <p class="img-name">{{ Testimonial.zubair }}</p>
+                <p class="img-name">{{ Testimonial.para5 }}</p>
             </div>
             <div class="backSide">
                 <p class="title"></p>
-                <p>{{ Testimonial.para5 }}</p>
             </div>
         </div>
     </div>
@@ -72,11 +67,10 @@
             <div class="frontSide">
                 <p class="title"></p>
                 <img :src="Testimonial.image6" alt="">
-                <p class="img-name">{{ Testimonial.matthew }}</p>
+                <p class="img-name">{{ Testimonial.para6 }}</p>
             </div>
             <div class="backSide">
                 <p class="title"></p>
-                <p>{{ Testimonial.para6 }}</p>
             </div>
         </div>
     </div>
@@ -171,7 +165,7 @@ export default {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 100%;
+  height: 120%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 1rem;
@@ -179,9 +173,7 @@ export default {
   box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
   font-weight: 700;
 }
-.img-name{
-  justify-content: center;
-}
+
 .backSide {
   transform: rotateY(180deg);
 }
@@ -203,11 +195,19 @@ export default {
   animation: animate 5s linear infinite;
 }
 .img-name{
-  margin-top: 100%;
+  margin-top: 57%;
   margin-left: -30%;
   
 }
 
+.frontSide img[data-v-c1cfdf9a][data-v-c1cfdf9a] {
+    width: 130px;
+    height: 130px;
+    border-radius: 150px;
+    position: relative;
+    left: 90px;
+    top: -98px;
+}
 @keyframes animate {
   0% {
     opacity: 0.3;
@@ -258,13 +258,177 @@ export default {
 }
 }
 
-@media (width: 300px){
-  .chad{
+@media (max-width: 900px){
+  .chad[data-v-c1cfdf9a] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 37px;
+    height: 200vh;
+}
+}
+
+
+@media (max-width: 800px){
+  .chad[data-v-c1cfdf9a] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 8px;
+    height: 200vh;
+}
+}
+
+
+@media (max-width: 700px){
+  .chad[data-v-c1cfdf9a] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: -24px;
+    height: 200vh;
+}
+.frontSide[data-v-c1cfdf9a], .backSide[data-v-c1cfdf9a] {
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: inherit;
-    margin-top: -16%;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 96%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+}
+.img-name[data-v-c1cfdf9a][data-v-c1cfdf9a] {
+    margin-top: 57%;
+    margin-left: -36%;
+    font-size: 12px;
+    padding: 39px;
+}
+.frontSide img[data-v-c1cfdf9a][data-v-c1cfdf9a][data-v-c1cfdf9a] {
+    width: 130px;
+    height: 130px;
+    border-radius: 150px;
+    position: relative;
+    left: 90px;
+    top: -83px;
+}
+}
+
+@media (max-width: 600px){
+  .chad[data-v-c1cfdf9a] {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-left: 136px;
+    height: 380vh;
+}
+.frontSide[data-v-c1cfdf9a][data-v-c1cfdf9a], .backSide[data-v-c1cfdf9a][data-v-c1cfdf9a] {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 79%;
+    height: 92%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+}
+.img-name[data-v-c1cfdf9a][data-v-c1cfdf9a][data-v-c1cfdf9a] {
+    margin-top: 57%;
+    margin-left: -42%;
+    font-size: 12px;
+    padding: 26px;
+}
+.frontSide[data-v-c1cfdf9a][data-v-c1cfdf9a][data-v-c1cfdf9a], .backSide[data-v-c1cfdf9a][data-v-c1cfdf9a][data-v-c1cfdf9a] {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 85%;
+    height: 92%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+}
+.frontSide img[data-v-c1cfdf9a][data-v-c1cfdf9a][data-v-c1cfdf9a][data-v-c1cfdf9a] {
+    width: 130px;
+    height: 130px;
+    border-radius: 150px;
+    position: relative;
+    left: 79px;
+    top: -75px;
+}
+}
+
+@media (max-width: 500px){
+  .chad[data-v-c1cfdf9a] {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-left: 94px;
+    height: 380vh;
+}
+.frontSide[data-v-c1cfdf9a][data-v-c1cfdf9a], .backSide[data-v-c1cfdf9a][data-v-c1cfdf9a] {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 79%;
+    height: 92%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+}
+.backSide p[data-v-c1cfdf9a] {
+    line-height: 26px;
+    font-size: 14px;
+}
+}
+
+@media (max-width: 300px){
+  .chad[data-v-c1cfdf9a][data-v-c1cfdf9a] {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-left: -5px;
+    height: 380vh;
+}
+.frontSide[data-v-c1cfdf9a][data-v-c1cfdf9a], .backSide[data-v-c1cfdf9a][data-v-c1cfdf9a] {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 79%;
+    height: 92%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+}
+.backSide p[data-v-c1cfdf9a] {
+    line-height: 26px;
+    font-size: 14px;
+}
+}
+
+@media (width: 400px){
+  .chad{
+    isplay: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-left: 27px;
+    margin-top: 2px;
+    height: 380vh;
   }
 
   .frontSide img {
