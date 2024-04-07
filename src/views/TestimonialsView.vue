@@ -150,16 +150,12 @@ export default {
   cursor: pointer;
 }
 
-.myCard:hover .innerCard {
-  transform: rotateY(180deg);
-}
 .frontSide img{
   width: 250px;
   height: 300px;
   margin-top: -16%;
 }
-.frontSide,
-.backSide {
+.frontSide {
   position: absolute;
   display: flex;
   align-items: center;
@@ -173,15 +169,10 @@ export default {
   box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
   font-weight: 700;
 }
-
-.backSide {
-  transform: rotateY(180deg);
-}
 .backSide p{
   line-height: 30px;
 }
-.frontSide::before,
-.backSide::before {
+.frontSide::before{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -207,19 +198,6 @@ export default {
     position: relative;
     left: 90px;
     top: -98px;
-}
-@keyframes animate {
-  0% {
-    opacity: 0.3;
-  }
-
-  80% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0.3;
-  }
 }
 @media (max-width: 750px){
   .name{
@@ -373,6 +351,33 @@ export default {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     margin-left: 94px;
+    height: 380vh;
+}
+.frontSide[data-v-c1cfdf9a][data-v-c1cfdf9a], .backSide[data-v-c1cfdf9a][data-v-c1cfdf9a] {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 79%;
+    height: 92%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+}
+.backSide p[data-v-c1cfdf9a] {
+    line-height: 26px;
+    font-size: 14px;
+}
+}
+
+@media (max-width: 350px){
+  .chad[data-v-c1cfdf9a][data-v-c1cfdf9a] {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-left: -5px;
     height: 380vh;
 }
 .frontSide[data-v-c1cfdf9a][data-v-c1cfdf9a], .backSide[data-v-c1cfdf9a][data-v-c1cfdf9a] {

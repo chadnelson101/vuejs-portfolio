@@ -91,10 +91,7 @@ export default {
 
 <style scoped>
 .projects{
-  height: 100vh;
-}
-element.style {
-    gap: 53px;
+  height: 110vh;
 }
  h1{
   color:black;
@@ -102,7 +99,7 @@ element.style {
 .grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: -20px;
+  gap: 25px;
   margin-top: 5%;
   margin-left: 10%;
 }
@@ -265,7 +262,7 @@ element.style {
 }
 }
 
-@media (min-width: 700px) {
+/* @media (min-width: 700px) {
   .grid[data-v-6375b3f9][data-v-6375b3f9] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -283,7 +280,7 @@ element.style {
     font-size: 46px;
     left: 16px;
 }
-}
+} */
 
 @media (max-width: 600px){
   .projects{
